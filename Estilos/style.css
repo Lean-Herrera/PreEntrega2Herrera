@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -22,22 +22,22 @@
 
 } */
 
-.body-principal{
+.body-principal {
     min-height: 100vh;
     position: relative;
 }
- 
 
- .header-index {
+
+.header-index {
 
     /* background: url("../imagenes-p/send/55b1a128e6587d262244d0e86ae3b0c5.jpeg");
     background-repeat: no-repeat; */
     background-size: cover;
     background-position: center;
-     background-attachment: fixed; 
+    background-attachment: fixed;
     height: 15rem;
 
-} 
+}
 
 header img {
     width: 15rem;
@@ -58,8 +58,8 @@ header img {
 
 
 
-.video-index{
-    
+.video-index {
+
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -69,7 +69,7 @@ header img {
     z-index: -1;
 }
 
-.capa{
+.capa {
     position: absolute;
     top: 0;
     left: 0;
@@ -80,22 +80,23 @@ header img {
     z-index: -1;
 
 }
+
 .subtitulo-principal {
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
-    
+
 }
 
 ul.menu {
     position: fixed;
-    right:0px;
+    right: 0px;
 
     list-style-type: none;
     display: flex;
     float: inline-end;
     padding: 0px 25px;
-    background-color: rgb(0, 0, 0,0.7);
+    background-color: rgb(0, 0, 0, 0.7);
     border-radius: 5px;
 
 }
@@ -103,7 +104,7 @@ ul.menu {
 
 
 nav ul li {
-    
+
     display: flex;
     margin-left: 1rem;
 }
@@ -121,12 +122,12 @@ header a {
     gap: 1rem;
     margin-bottom: 2rem;
 
-    
+
 }
 
 
-.subtitulo-seccion section{
-    height: fit-content;  
+.subtitulo-seccion section {
+    height: fit-content;
     background-color: rgba(255, 251, 196, 0.263);
     border-radius: 10px;
     margin-right: 2rem;
@@ -139,14 +140,14 @@ header a {
     display: flex;
     justify-content: center;
     margin-block: 1rem 2rem;
-    
+
 
 
 }
 
 .subtitulo-seccion p {
     margin-left: 1rem;
-    color:aliceblue;
+    color: aliceblue;
     font-size: 2rem;
     font-family: serif;
     padding: 1rem 1rem 2rem 1rem;
@@ -164,11 +165,11 @@ header a {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right;
-    background-attachment: fixed ;
+    background-attachment: fixed;
     margin-left: 1rem;
     border-radius: 15px;
     margin-right: 2rem;
-    
+
 
 
 }
@@ -189,14 +190,15 @@ header a {
 
 
 }
-.a-viajar{
-    height: fit-content;  
+
+.a-viajar {
+    height: fit-content;
     background-color: rgba(255, 251, 196, 0.263);
     border-radius: 10px;
     margin-right: 2rem;
 }
 
-.a-viajar h2{
+.a-viajar h2 {
     color: rgb(12, 14, 14);
     font-size: 2.5rem;
     display: flex;
@@ -204,9 +206,9 @@ header a {
     margin-block: 1rem 2rem;
 }
 
-.a-viajar{
+.a-viajar {
     margin-left: 1rem;
-    color:aliceblue;
+    color: aliceblue;
     font-size: 2rem;
     font-family: serif;
     padding: 1rem 1rem 2rem 1rem;
@@ -217,15 +219,15 @@ header a {
 
 footer {
 
-    background-color:rgb(0, 0, 0,0.8);
+    background-color: rgb(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
-    justify-content:space-between ;
-    
+    justify-content: space-between;
+
 
 }
 
-.logo-footer img{
+.logo-footer img {
 
     width: 12rem;
 }
@@ -234,7 +236,7 @@ footer {
     width: 12rem;
     display: flex;
 
-} 
+}
 
 
 .contacto h3 {
@@ -242,19 +244,20 @@ footer {
     display: flex;
     justify-content: center;
     color: peru;
-    
+
 
 }
 
-.redes{
+.redes {
     margin-right: 2rem;
 }
+
 .redes h3 {
     font-size: 1.5rem;
     display: flex;
     justify-content: center;
     color: peru;
-    
+
 
 }
 
@@ -262,25 +265,26 @@ footer {
     display: flex;
     color: aliceblue;
     justify-content: center;
-    
+
 }
 
 
 
-.redes ul{
+.redes ul {
     display: flex;
     /* margin-left: 38rem; */
-    
+
 }
-.redes  a {
+
+.redes a {
     color: aliceblue;
     display: flex;
     justify-content: center;
     margin-left: 2rem;
     width: 5rem;
     height: 5rem;
-    
-    
+
+
 
 }
 
@@ -304,12 +308,13 @@ footer {
 
 } */
 
-.body-senderismo{
+.body-senderismo {
     min-height: 100vh;
     position: relative;
 }
-.video-senderismo{
-    
+
+.video-senderismo {
+
     object-fit: cover;
     position: absolute;
     top: 0;
@@ -319,52 +324,54 @@ footer {
     z-index: -1;
 }
 
-.header-senderismo{
+.header-senderismo {
 
     /* background: url("../imagenes-p/send/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
     background-repeat: no-repeat; */
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 15rem;
-   
-    justify-content:space-between;
+
+    justify-content: space-between;
     align-items: center;
-    
+
 
 }
-.header-senderismo h1{
-    
-        color:bisque;
-        font-size: 4rem;
-        display: flex;
-        justify-content: center;
-        position: sticky;
-        top: 0px;
-    
+
+.header-senderismo h1 {
+
+    color: bisque;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+
 }
 
 
-.presentacion-senderismo{
+.presentacion-senderismo {
     display: flex;
     justify-content: space-around;
     background-color: rgba(16, 130, 54, 0);
     padding-block: 1rem;
     margin-block: 2rem;
     border-top: solid 1px;
-    
+
 }
-.que-es{ 
-    
+
+.que-es {
+
     border: solid;
-    background-color:rgba(255, 228, 196, 0.849);
+    background-color: rgba(255, 228, 196, 0.849);
     height: fit-content;
     padding: 1.5rem;
     border-radius: 10px;
 }
 
-.donde-se-hace{
-    background-color:rgba(255, 228, 196, 0.776);
+.donde-se-hace {
+    background-color: rgba(255, 228, 196, 0.776);
     border: solid black;
     margin-top: 25vh;
     height: fit-content;
@@ -372,7 +379,7 @@ footer {
     border-radius: 10px;
 
 
-} 
+}
 
 .presentacion-senderismo h2 {
 
@@ -380,10 +387,10 @@ footer {
     font-size: 2.5rem;
 }
 
-.presentacion-senderismo p{
+.presentacion-senderismo p {
     margin-top: 1.2rem;
     margin-left: 1rem;
-    color:rgb(22, 114, 139);
+    color: rgb(22, 114, 139);
     font-size: 1.5rem;
     font-family: serif;
 
@@ -394,49 +401,50 @@ footer {
 
 
 
-.video-send 
-{
+.video-send {
     width: 25rem;
     position: relative;
     border-radius: 15px;
 }
 
 .beneficios-tips-subtitulo {
-    color:antiquewhite;
+    color: antiquewhite;
     font-size: 2rem;
     font-family: 'Bree Serif';
-    background-color:  rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     -webkit-background-clip: text;
     margin-left: 2rem;
     margin-top: 3rem;
-   
-    
-    
+
+
+
 }
-.grid-container{
+
+.grid-container {
     margin-top: 10rem;
     display: grid;
     column-gap: 20rem;
     grid-template-columns: auto auto;
     justify-content: center;
 }
-.grid-container article{
+
+.grid-container article {
     display: grid;
-    grid-template-rows: repeat(1,1fr) ; 
+    grid-template-rows: repeat(1, 1fr);
     align-content: center;
 }
 
-.video-benef{
+.video-benef {
     height: 40rem;
     border-radius: 15px;
 }
 
-.video-tips{
+.video-tips {
     height: 40rem;
     border-radius: 15px;
 }
 
-.grid-container article h3{
+.grid-container article h3 {
     justify-self: center;
     align-self: center;
     margin-top: 1rem;
@@ -446,11 +454,11 @@ footer {
     background-color: antiquewhite;
     border-radius: 10px;
     padding: 0px 3px 0px 3px;
-    
+
 
 }
 
-.tipos-de-senderismo{
+.tipos-de-senderismo {
 
     margin-block: 3rem;
     background-color: rgba(250, 235, 215, 0.88);
@@ -458,17 +466,18 @@ footer {
     padding: 2rem;
     width: 75vw;
     border: solid 1px;
-    
+
 }
-.tipos-de-senderismo h3{
+
+.tipos-de-senderismo h3 {
     margin-left: 1rem;
     font-family: 'Times New Roman';
     font-size: 1.8rem
 }
 
-.tipos-de-senderismo ul li{
+.tipos-de-senderismo ul li {
 
-    display: flex; 
+    display: flex;
     border: solid black 1px;
     margin-block: 1rem;
     margin-left: 1rem;
@@ -480,21 +489,22 @@ footer {
 
 }
 
-.donde-realizarlo{
+.donde-realizarlo {
     background-color: rgba(42, 121, 11, 0.295);
 
 }
-.donde-realizarlo article{
 
-    background-color: antiquewhite; 
+.donde-realizarlo article {
+
+    background-color: antiquewhite;
     padding-top: 1px;
     margin-inline: 1rem;
     border-radius: 15px;
-    border: solid 1px ;
+    border: solid 1px;
 
 }
 
-.donde-realizarlo article h3{
+.donde-realizarlo article h3 {
     display: flex;
     font-family: 'Times New Roman';
     font-size: 1.7rem;
@@ -503,15 +513,15 @@ footer {
 
 }
 
-.donde-realizarlo article p{
+.donde-realizarlo article p {
 
     padding-block: 1rem 0.5rem;
-    font-size:1.2rem;
+    font-size: 1.2rem;
     margin-left: 1rem;
 
 }
 
-.mapas{
+.mapas {
     margin-top: 3rem;
     display: flex;
     overflow: auto;
@@ -520,7 +530,7 @@ footer {
 
 }
 
-.mapas h3{
+.mapas h3 {
 
     font-size: 1.5rem;
 
@@ -549,19 +559,19 @@ footer {
     background-position: center;
     background-attachment: fixed;
     height: 12rem;
-   
+
 
 }
 
-.main-indispensables{
+.main-indispensables {
     background-color: rgba(10, 10, 10, 0.5)
 }
 
 .encabezado-indispensables {
-    
-    background-color:rgb(222, 184, 135,0.7);
+
+    background-color: rgb(222, 184, 135, 0.7);
     font-size: 2.5rem;
-   
+
 }
 
 .lista-indispensables ol li {
@@ -572,11 +582,11 @@ footer {
 
 }
 
-.lista-indispensables p{
+.lista-indispensables p {
     font-size: 1.5rem;
     color: aliceblue;
-    background-size:auto;
-    
+    background-size: auto;
+
 }
 
 
@@ -591,23 +601,23 @@ footer {
     background-attachment: fixed;
 } */
 
-.body-camping{
+.body-camping {
     min-height: 100vh;
     position: relative;
 }
-.video-fondo-camping
-{
-   object-fit: cover;
+
+.video-fondo-camping {
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
-     
+
 }
 
-    
+
 
 
 .header-camping {
@@ -626,28 +636,28 @@ footer {
 /* ------------INDEX MOBILE----------------------- */
 
 
-@media(max-width:350px){
-.body-principal{
-   
-    background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg"); 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
+@media(max-width:400px) {
+    .body-principal {
 
-.video-index{
-    display: none;
-}
+        background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
 
-/* .body-principal{
+    .video-index {
+        display: none;
+    }
+
+    /* .body-principal{
     min-height: 100vh;
     position:relative;
 }
   */
 
- .capa{
-    /* position:absolute;
+    .capa {
+        /* position:absolute;
     top: 0;
     left: 0;
     width:100vh ;
@@ -655,389 +665,394 @@ footer {
     background-color: rgba(0, 0, 0, 0.507);
     mix-blend-mode: overlay;
     z-index: -1; */
-    display: none;
-
-} 
-.header-index {
-
- 
-    display: grid;
-    grid-template-columns: 40%;
-    align-items: center;
-    height: fit-content;
-    width: 100vh;
-
-} 
-
-.header-index img {
-    display: grid;
-    width: 10rem;
-    position:relative;
-}
-
-.header-index h1 {
-    color: #0a0f32d1;
-    font-size: 5rem;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-}
-
-.subtitulo-principal {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-    
-}
-
-ul.menu {
-    gap: 1rem;
-    align-items: center;
-    right:0px;
-    position:relative;
-    list-style-type: none;
-    display: flex;
-    background-color: rgb(0, 0, 0,0.7);
-    border-radius: 5px;
-    padding: 0;
-
-}
-
-nav{
-    grid-column: span 2;
-    justify-content: center;
-}
-
-nav ul li {
-    
-    display:grid;
-    margin-left:0 ;
-}
-
-header a {
-    text-decoration: underline;
-    color: #f48a20d1;
-    font-size: 1.2rem;
-}
-
-.main-index {
-    width: 100vh;
-
-}
-
-.subtitulo-seccion {
-    
-    display:block;
-    align-items: center;
-    margin-left: 2rem;
-    border-radius: 10px;
-    gap: 1rem;
-    margin-bottom:0;
-
-    
-}
-
-
-.subtitulo-seccion section{
-    height: fit-content;
-    width: 90vh;  
-    background-color: rgba(255, 251, 196, 0.263);
-    border-radius: 10px;
-    margin-right: 2rem;
-    align-items: center;
-}
-
-.subtitulo-seccion h2 {
-
-    color: rgb(12, 14, 14);
-    font-size: 2.5rem;
-    display: flex;
-    justify-content:center;
-    margin-block: 1rem 2rem;
-    
+        display: none;
+
+    }
 
+    .header-index {
 
-}
 
-.subtitulo-seccion p {
-    margin-left: 1rem;
-    color:aliceblue;
-    font-size: 2rem;
-    font-family: serif;
-    padding: 1rem 1rem 2rem 1rem;
+        display: grid;
+        grid-template-columns: 40%;
+        align-items: center;
+        height: fit-content;
+        width: 100vh;
 
+    }
 
-}
+    .header-index img {
+        display: grid;
+        width: 10rem;
+        position: relative;
+    }
 
+    .header-index h1 {
+        color: #0a0f32d1;
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+    }
 
-.imagen-principal {
+    .subtitulo-principal {
+        font-size: 1.2rem;
+        display: flex;
+        justify-content: center;
 
+    }
 
-    width: 90vh;
-    height: 20rem ;
-    background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment:scroll;
-    border-radius: 15px;
-    margin-left: 0;
-    margin-right: 0;
-    
+    ul.menu {
+        gap: 1rem;
+        align-items: center;
+        right: 0px;
+        position: relative;
+        list-style-type: none;
+        display: flex;
+        background-color: rgb(0, 0, 0, 0.7);
+        border-radius: 5px;
+        padding: 0;
 
+    }
 
-}
+    nav {
+        grid-column: span 2;
+        justify-content: center;
+    }
 
+    nav ul li {
 
+        display: grid;
+        margin-left: 0;
+    }
 
-.imagen-secundaria {
+    header a {
+        text-decoration: underline;
+        color: #f48a20d1;
+        font-size: 1.2rem;
+    }
 
-    width: 90vh;
-    height: 30rem;
-    background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    background-attachment:local;
-    margin-right: 0;
-    border-radius: 20px;
+    .main-index {
+        width: 100vh;
 
+    }
 
-}
-.a-viajar{
-    
-    height:auto;  
-    background-color: rgba(255, 251, 196, 0.263);
-    border-radius: 10px;
-    margin-right: 2rem;
-}
+    .subtitulo-seccion {
 
-.a-viajar h2{
-    color: rgb(12, 14, 14);
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    margin-block: 1rem 2rem;
-}
+        display: block;
+        align-items: center;
+        margin-left: 2rem;
+        border-radius: 10px;
+        gap: 1rem;
+        margin-bottom: 0;
 
-.a-viajar{
-    margin-left: 1rem;
-    color:aliceblue;
-    font-size: 2rem;
-    font-family: serif;
-    padding: 1rem 1rem 2rem 1rem;
 
-}
+    }
 
 
+    .subtitulo-seccion section {
+        height: fit-content;
+        width: 90vh;
+        background-color: rgba(255, 251, 196, 0.263);
+        border-radius: 10px;
+        margin-right: 2rem;
+        align-items: center;
+    }
 
-footer {
+    .subtitulo-seccion h2 {
 
-    background-color:rgb(0, 0, 0,0.8);
-    align-items:center;
-    width: 100vh;
-    row-gap: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    
-
-}
+        color: rgb(12, 14, 14);
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        margin-block: 1rem 2rem;
 
-.logo-footer img{
 
-    width: 12rem;
-}
 
-.redes a img {
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-
-} 
-
-.contacto{
-    align-items: center;
-    display: grid;
-    row-gap: 1rem;
-}
-
-
-.contacto h3 {
-    font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    color: peru;
-    margin-left: 3rem;
-    
-    
-
-}
-
-.redes{
-    grid-column: span 2;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    margin-bottom: 3rem;
-    
-    
-}
-.redes h3 {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content:center;
-    color: peru;
-    
-
-}
-
-.contacto ul li {
-    display: flex;
-    color: aliceblue;
-    justify-content: center;
-    
-}
-
-
-
-.redes ul{
-    display: flex;
-    /* margin-left: 38rem; */
-    
-}
-.redes  a {
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    margin-left: 2rem;
-    width: 5rem;
-    height: 5rem;
-    
-    
-
-}
-
-
-/* --TABLET CAMPING--- */
-
-
-/* --MOBILE CAMPING-- */
-
- .body-camping {
-    height: 20rem;
-    background: url("../imagenes-p/cam/wp1857439.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-} 
-
-.body-camping{
-    min-height: 100vh;
-    position: relative;
-}
-.video-fondo-camping
-{
-   display: none;
-     
-}
-
-    
-
-
-.header-camping {
-    display: grid;
-    grid-template-columns: 40%;
-    align-items: center;
-    height: fit-content;
-    width: 100vh;
-    /* background-color: aqua; */
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
-}
-
-.header-camping img {
-    display: grid;
-    width: 10rem;
-    position:relative;
-}
-
-.header-camping h1 {
-    color: #0a0f32d1;
-    font-size: 5rem;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-    background-color: antiquewhite;
-    border-radius: 100px;
-}
-
-.main-camping{
-    display: grid;
-    width: 100vh;
-    row-gap: 2rem;
-    margin-bottom: 2rem;
-    
-
-    
-
-}
-
-.video-camping{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 25rem;
-    position: relative;
-    border-radius: 15px;
-}
-
-.main-camping section{
-    display: grid;
-    align-self: center;
-    align-items: center;
-    justify-self: center;
-    justify-content: center;
-    border: solid;
-    row-gap: 1rem;
-    background-color:rgba(255, 228, 196, 0.849);
-    height: fit-content;
-    width: 90vh;
-    padding: 1.5rem;
-    border-radius: 10px; 
-
-}
-
-
-.main-camping article{
-    display: grid;
-    row-gap: 1rem;
-
-}
-.main-camping article h2{
-    justify-self: center;
-    background-color:rgba(255, 228, 196, 0.849);
-    border-radius: 10px;
-
-
-}
-
-.video-benef{
-    justify-self: center;
-    align-self: center;
-    display: grid;
-}
-
-.video-tips{
-    justify-self: center;
-    align-self: center;
-    display: grid;
-}
-
-.main-camping section h3{
-
-    justify-self: center;
-    align-items: center;
-}
+    }
+
+    .subtitulo-seccion p {
+        margin-left: 1rem;
+        color: aliceblue;
+        font-size: 2rem;
+        font-family: serif;
+        padding: 1rem 1rem 2rem 1rem;
+
+
+    }
+
+
+    .imagen-principal {
+
+
+        width: 90vh;
+        height: 20rem;
+        background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        border-radius: 15px;
+        margin-left: 0;
+        margin-right: 0;
+
+
+
+    }
+
+
+
+    .imagen-secundaria {
+
+        width: 90vh;
+        height: 30rem;
+        background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+        background-attachment: local;
+        margin-right: 0;
+        border-radius: 20px;
+
+
+    }
+
+    .a-viajar {
+
+        height: auto;
+        background-color: rgba(255, 251, 196, 0.263);
+        border-radius: 10px;
+        margin-right: 2rem;
+    }
+
+    .a-viajar h2 {
+        color: rgb(12, 14, 14);
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        margin-block: 1rem 2rem;
+    }
+
+    .a-viajar {
+        margin-left: 1rem;
+        color: aliceblue;
+        font-size: 2rem;
+        font-family: serif;
+        padding: 1rem 1rem 2rem 1rem;
+
+    }
+
+
+
+    footer {
+
+        background-color: rgb(0, 0, 0, 0.8);
+        align-items: center;
+        width: 100vh;
+        row-gap: 2rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+
+    }
+
+    .logo-footer img {
+
+        width: 12rem;
+    }
+
+    .redes a img {
+        width: 12rem;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .contacto {
+        align-items: center;
+        display: grid;
+        row-gap: 1rem;
+    }
+
+
+    .contacto h3 {
+        font-size: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        color: peru;
+        margin-left: 3rem;
+
+
+
+    }
+
+    .redes {
+        grid-column: span 2;
+        justify-content: center;
+        align-items: center;
+        display: grid;
+        margin-bottom: 3rem;
+
+
+    }
+
+    .redes h3 {
+        font-size: 1.5rem;
+        display: flex;
+        justify-content: center;
+        color: peru;
+
+
+    }
+
+    .contacto ul li {
+        display: flex;
+        color: aliceblue;
+        justify-content: center;
+
+    }
+
+
+
+    .redes ul {
+        display: flex;
+        /* margin-left: 38rem; */
+
+    }
+
+    .redes a {
+        color: aliceblue;
+        display: flex;
+        justify-content: center;
+        margin-left: 2rem;
+        width: 5rem;
+        height: 5rem;
+
+
+
+    }
+
+
+    /* --TABLET CAMPING--- */
+
+
+    /* --MOBILE CAMPING-- */
+
+    .body-camping {
+        height: 20rem;
+        background: url("../imagenes-p/cam/wp1857439.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .body-camping {
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .video-fondo-camping {
+        display: none;
+
+    }
+
+
+
+
+    .header-camping {
+        display: grid;
+        grid-template-columns: 40%;
+        align-items: center;
+        height: fit-content;
+        width: 100vh;
+        /* background-color: aqua; */
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .header-camping img {
+        display: grid;
+        width: 10rem;
+        position: relative;
+    }
+
+    .header-camping h1 {
+        color: #0a0f32d1;
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+        background-color: antiquewhite;
+        border-radius: 100px;
+    }
+
+    .main-camping {
+        display: grid;
+        width: 100vh;
+        row-gap: 2rem;
+        margin-bottom: 2rem;
+
+
+
+
+    }
+
+    .video-camping {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 25rem;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .main-camping section {
+        display: grid;
+        align-self: center;
+        align-items: center;
+        justify-self: center;
+        justify-content: center;
+        border: solid;
+        row-gap: 1rem;
+        background-color: rgba(255, 228, 196, 0.849);
+        height: fit-content;
+        width: 90vh;
+        padding: 1.5rem;
+        border-radius: 10px;
+
+    }
+
+
+    .main-camping article {
+        display: grid;
+        row-gap: 1rem;
+
+    }
+
+    .main-camping article h2 {
+        justify-self: center;
+        background-color: rgba(255, 228, 196, 0.849);
+        border-radius: 10px;
+
+
+    }
+
+    .video-benef {
+        justify-self: center;
+        align-self: center;
+        display: grid;
+    }
+
+    .video-tips {
+        justify-self: center;
+        align-self: center;
+        display: grid;
+    }
+
+    .main-camping section h3 {
+
+        justify-self: center;
+        align-items: center;
+    }
 }
