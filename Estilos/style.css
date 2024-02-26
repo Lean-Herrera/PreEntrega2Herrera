@@ -636,7 +636,7 @@ footer {
 /* ------------INDEX MOBILE----------------------- */
 
 
-@media(max-width:600px) {
+@media(max-width:350px) {
     .body-principal {
 
         background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
