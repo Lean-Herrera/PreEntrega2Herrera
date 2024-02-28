@@ -542,7 +542,7 @@ footer {
 /* INDISPENSABLES*/
 .body-indispensables {
     height: 20rem;
-    background: url("../imagenes-p/insispensables/maleta.webp");
+    background: url("../imagenes-p/indispensables/maleta.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -554,7 +554,7 @@ footer {
 
     background-color: antiquewhite;
     border-radius: 30px;
-    /* background: url("../imagenes-p/insispensables/maleta.webp"); */
+    /* background: url("../imagenes-p/indispensables/maleta.webp"); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
