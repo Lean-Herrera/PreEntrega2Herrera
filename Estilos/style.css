@@ -1045,8 +1045,6 @@ header img {
 
     footer {
 
-
-
         background-color: rgb(0, 0, 0, 0.8);
         align-items: center;
         width: 100vh;
@@ -1054,6 +1052,7 @@ header img {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr 1fr;
+        border-width: 2rem;
 
 
     }
