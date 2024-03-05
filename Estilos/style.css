@@ -589,15 +589,15 @@ footer {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: grid;
+    row-gap: 2rem;
 }
 
 .header-indispensables {
 
 
-    background-color: antiquewhite;
+    background-color: rgba(250, 235, 215, 0.878);
     border-radius: 30px;
-    /* background: url("../imagenes-p/indispensables/maleta.webp"); */
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -606,8 +606,30 @@ footer {
 
 }
 
+
+header img {
+    width: 15rem;
+    display: flex;
+    float: left;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-indispensables h1 {
+    color: #0a0f32d1;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+
+
 .main-indispensables {
-    background-color: rgba(10, 10, 10, 0.5)
+    background-color: rgba(10, 10, 10, 0.5);
+    display: grid;
+    gap: 2rem;
+    
 }
 
 .encabezado-indispensables {
@@ -617,10 +639,28 @@ footer {
 
 }
 
+.lista-indispensables ol {
+    display: grid;
+    row-gap: 1rem;
+    margin-left: 3rem;
+
+}
+
+.lista-indispensables section {
+    border: solid black;
+    border-radius: 2rem;
+    display: grid;
+    padding: 1rem 2rem;
+
+
+}
+
 .lista-indispensables ol li {
 
     color: antiquewhite;
     font-size: 2rem;
+    justify-self:baseline;
+
     /* background-color: rgb(0, 0, 0,0.7); */
 
 }
@@ -724,31 +764,32 @@ footer {
 
 }
 
-.main-camping section h2{
+.main-camping section h2 {
     font-size: 2rem;
 }
 
-.main-camping section p{
+.main-camping section p {
     font-size: 1.2rem;
 }
 
-.main-camping section h3{
+.main-camping section h3 {
     font-size: 2rem;
 }
 
-.que-es p{
+.que-es p {
     font-size: 1.2rem;
 }
 
-.que-es h2{
+.que-es h2 {
     font-size: 2rem;
 }
 
-.articulos-camping{
-display: grid;
-grid-template-columns: repeat(2,1fr);
+.articulos-camping {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
 }
+
 .main-camping article {
     display: grid;
     row-gap: 1rem;
@@ -769,7 +810,7 @@ grid-template-columns: repeat(2,1fr);
     display: grid;
     width: 25rem;
     border-radius: 15px;
-    
+
 }
 
 .video-recomendaciones {
@@ -874,7 +915,7 @@ grid-template-columns: repeat(2,1fr);
 
 
 
-    
+
 
     nav ul li {
 
@@ -891,10 +932,10 @@ grid-template-columns: repeat(2,1fr);
     .main-index {
         width: 100vh;
         display: grid;
-    row-gap: 2rem;
-}
+        row-gap: 2rem;
+    }
 
-    
+
 
     .subtitulo-seccion {
 
@@ -1234,16 +1275,16 @@ grid-template-columns: repeat(2,1fr);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        
+
     }
-    
+
     .video-senderismo {
-    
+
         display: none;
     }
-    
+
     .header-senderismo {
-    
+
         display: grid;
         grid-template-columns: 40%;
         align-items: center;
@@ -1252,12 +1293,12 @@ grid-template-columns: repeat(2,1fr);
         /* background-color: aqua; */
         padding-bottom: 2rem;
         margin-bottom: 1rem;
-    
-    
+
+
     }
-    
+
     .header-senderismo img {
-    
+
         width: 10rem;
         position: relative;
     }
@@ -1272,7 +1313,7 @@ grid-template-columns: repeat(2,1fr);
         background-color: antiquewhite;
         border-radius: 100px;
     }
-    
+
     .main-send {
         display: grid;
         width: 100vh;
@@ -1281,7 +1322,7 @@ grid-template-columns: repeat(2,1fr);
         justify-content: center;
 
     }
-    
+
     .presentacion-senderismo {
         display: grid;
         justify-self: center;
@@ -1290,9 +1331,9 @@ grid-template-columns: repeat(2,1fr);
         margin-block: 2rem;
         border-top: solid 1px;
         row-gap: 2rem;
-    
+
     }
-    
+
     .que-es {
         justify-self: center;
         border: solid;
@@ -1301,59 +1342,59 @@ grid-template-columns: repeat(2,1fr);
         padding: 1.5rem;
         border-radius: 10px;
     }
-    
+
     .donde-se-hace {
         background-color: rgba(255, 228, 196, 0.776);
         border: solid black;
-        margin:0;
+        margin: 0;
         height: fit-content;
         padding: 1.5rem;
         border-radius: 10px;
-    
-    
+
+
     }
-    
+
     .presentacion-senderismo h2 {
-    
+
         color: rgb(49, 33, 14);
         font-size: 2.5rem;
     }
-    
+
     .presentacion-senderismo p {
         margin-top: 1.2rem;
         margin-left: 1rem;
         color: rgb(22, 114, 139);
         font-size: 1.5rem;
         font-family: serif;
-    
-    
+
+
     }
-    
-    
-    
-    
-    
+
+
+
+
+
     .video-send {
         width: 25rem;
         position: relative;
         border-radius: 15px;
         justify-self: center;
     }
-    
+
     .beneficios-tips-subtitulo {
         color: rgb(221, 134, 20);
         font-size: 2rem;
         font-family: 'Bree Serif';
         background-color: rgba(0, 0, 0, 0.879);
-        margin:0;
+        margin: 0;
         -webkit-background-clip: unset;
         border-radius: 15px;
         width: 90vh;
         justify-self: center;
         padding-inline: 1rem;
-    
+
     }
-    
+
     .grid-container {
         margin-top: 10rem;
         display: grid;
@@ -1361,23 +1402,23 @@ grid-template-columns: repeat(2,1fr);
         grid-template-columns: 1fr;
         justify-self: center;
     }
-    
+
     .grid-container article {
         display: grid;
         grid-template-rows: repeat(1, 1fr);
         align-content: center;
     }
-    
+
     .video-benef {
         height: 40rem;
         border-radius: 15px;
     }
-    
+
     .video-tips {
         height: 40rem;
         border-radius: 15px;
     }
-    
+
     .grid-container article h3 {
         justify-self: center;
         align-self: center;
@@ -1388,30 +1429,30 @@ grid-template-columns: repeat(2,1fr);
         background-color: antiquewhite;
         border-radius: 10px;
         padding: 0px 3px 0px 3px;
-    
-    
+
+
     }
-    
+
     .tipos-de-senderismo {
-    
+
         margin-block: 3rem;
         background-color: rgba(250, 235, 215, 0.88);
         border-radius: 20px;
         padding: 2rem;
-        width:80vh;
+        width: 80vh;
         border: solid 1px;
-        justify-self:center;
-    
+        justify-self: center;
+
     }
-    
+
     .tipos-de-senderismo h3 {
         margin-left: 1rem;
         font-family: 'Times New Roman';
         font-size: 1.8rem
     }
-    
+
     .tipos-de-senderismo ul li {
-    
+
         display: flex;
         border: solid black 1px;
         margin-block: 1rem;
@@ -1420,60 +1461,60 @@ grid-template-columns: repeat(2,1fr);
         width: fit-content;
         padding: 1rem;
         font-size: 1.3rem;
-    
-    
+
+
     }
-    
+
     .donde-realizarlo {
         background-color: rgba(42, 121, 11, 0.295);
         width: 95vh;
         margin-left: 1rem;
     }
-    
+
     .donde-realizarlo article {
-    
+
         background-color: antiquewhite;
         padding-top: 1px;
         margin-inline: 1rem;
         border-radius: 15px;
         border: solid 1px;
-    
+
     }
-    
+
     .donde-realizarlo article h3 {
         display: flex;
         font-family: 'Times New Roman';
         font-size: 1.7rem;
         margin-top: 1rem;
         justify-content: center;
-    
+
     }
-    
+
     .donde-realizarlo article p {
-    
+
         padding-block: 1rem 0.5rem;
         font-size: 1.2rem;
         margin-left: 1rem;
-    
+
     }
-    
+
     .mapas {
         margin-top: 3rem;
         display: flex;
         overflow: auto;
         gap: 1rem;
         margin-left: 1rem;
-    
-    }
-    
-    .mapas h3 {
-    
-        font-size: 1.5rem;
-    
+
     }
 
-      }
-  
+    .mapas h3 {
+
+        font-size: 1.5rem;
+
+    }
+
+}
+
 
 
 @media(min-width:501px)and (max-width:800px) {
@@ -1730,7 +1771,7 @@ grid-template-columns: repeat(2,1fr);
 
 
 
-    
+
 
     nav ul li {
 
@@ -1752,356 +1793,356 @@ grid-template-columns: repeat(2,1fr);
 
 
 
-.subtitulo-seccion {
+    .subtitulo-seccion {
 
-    display: block;
-    align-items: center;
-    margin-left: 2rem;
-    border-radius: 10px;
-    gap: 1rem;
-    margin-bottom: 0;
+        display: block;
+        align-items: center;
+        margin-left: 2rem;
+        border-radius: 10px;
+        gap: 1rem;
+        margin-bottom: 0;
 
 
-}
+    }
 
 
-.subtitulo-seccion section {
-    height: fit-content;
-    width: 90vh;
-    background-color: rgba(255, 251, 196, 0.263);
-    border-radius: 10px;
-    margin-right: 2rem;
-    align-items: center;
-}
+    .subtitulo-seccion section {
+        height: fit-content;
+        width: 90vh;
+        background-color: rgba(255, 251, 196, 0.263);
+        border-radius: 10px;
+        margin-right: 2rem;
+        align-items: center;
+    }
 
-.subtitulo-seccion h2 {
+    .subtitulo-seccion h2 {
 
-    color: rgb(12, 14, 14);
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    margin-block: 1rem 2rem;
+        color: rgb(12, 14, 14);
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        margin-block: 1rem 2rem;
 
 
 
-}
+    }
 
-.subtitulo-seccion p {
-    margin-left: 1rem;
-    color: aliceblue;
-    font-size: 2rem;
-    font-family: serif;
-    padding: 1rem 1rem 2rem 1rem;
+    .subtitulo-seccion p {
+        margin-left: 1rem;
+        color: aliceblue;
+        font-size: 2rem;
+        font-family: serif;
+        padding: 1rem 1rem 2rem 1rem;
 
 
-}
+    }
 
 
-.imagen-principal {
+    .imagen-principal {
 
 
-    width: 90vh;
-    height: 20rem;
-    background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    border-radius: 15px;
-    margin-left: 0;
-    margin-right: 0;
+        width: 90vh;
+        height: 20rem;
+        background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        border-radius: 15px;
+        margin-left: 0;
+        margin-right: 0;
 
 
 
-}
+    }
 
 
 
-.imagen-secundaria {
+    .imagen-secundaria {
 
-    width: 90vh;
-    height: 30rem;
-    background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    background-attachment: local;
-    margin-right: 0;
-    border-radius: 20px;
+        width: 90vh;
+        height: 30rem;
+        background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+        background-attachment: local;
+        margin-right: 0;
+        border-radius: 20px;
 
 
-}
+    }
 
-.a-viajar {
+    .a-viajar {
 
-    height: auto;
-    background-color: rgba(255, 251, 196, 0.263);
-    border-radius: 10px;
-    margin-right: 2rem;
-}
+        height: auto;
+        background-color: rgba(255, 251, 196, 0.263);
+        border-radius: 10px;
+        margin-right: 2rem;
+    }
 
-.a-viajar h2 {
-    color: rgb(12, 14, 14);
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    margin-block: 1rem 2rem;
-}
+    .a-viajar h2 {
+        color: rgb(12, 14, 14);
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        margin-block: 1rem 2rem;
+    }
 
-.a-viajar {
-    margin-left: 1rem;
-    color: aliceblue;
-    font-size: 2rem;
-    font-family: serif;
-    padding: 1rem 1rem 2rem 1rem;
-
-}
-
-
-/* ---SENDERISMO TABLET--- */
-
-.body-senderismo {
-    background: url("../imagenes-p/send/senderismo-mobile.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    
-}
+    .a-viajar {
+        margin-left: 1rem;
+        color: aliceblue;
+        font-size: 2rem;
+        font-family: serif;
+        padding: 1rem 1rem 2rem 1rem;
+
+    }
+
+
+    /* ---SENDERISMO TABLET--- */
 
-.video-senderismo {
+    .body-senderismo {
+        background: url("../imagenes-p/send/senderismo-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
 
-    display: none;
-}
+    }
 
-.header-senderismo {
+    .video-senderismo {
 
-    display: grid;
-    grid-template-columns: 40%;
-    align-items: center;
-    height: fit-content;
-    width: 100vh;
-    /* background-color: aqua; */
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
+        display: none;
+    }
 
+    .header-senderismo {
 
-}
+        display: grid;
+        grid-template-columns: 40%;
+        align-items: center;
+        height: fit-content;
+        width: 100vh;
+        /* background-color: aqua; */
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
 
-.header-senderismo img {
 
-    width: 10rem;
-    position: relative;
-}
-
-.header-senderismo h1 {
-    color: #0a0f32d1;
-    font-size: 5rem;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-    background-color: antiquewhite;
-    border-radius: 100px;
-}
-
-.main-send {
-    display: grid;
-    width: 100vh;
-    row-gap: 2rem;
-    margin-bottom: 2rem;
-    justify-content: center;
-
-}
-
-.presentacion-senderismo {
-    display: grid;
-    justify-self: center;
-    background-color: rgba(16, 130, 54, 0);
-    padding-block: 1rem;
-    margin-block: 2rem;
-    border-top: solid 1px;
-    row-gap: 2rem;
-
-}
-
-.que-es {
-    justify-self: center;
-    border: solid;
-    background-color: rgba(255, 228, 196, 0.849);
-    height: fit-content;
-    padding: 1.5rem;
-    border-radius: 10px;
-}
-
-.donde-se-hace {
-    background-color: rgba(255, 228, 196, 0.776);
-    border: solid black;
-    margin:0;
-    height: fit-content;
-    padding: 1.5rem;
-    border-radius: 10px;
-
-
-}
-
-.presentacion-senderismo h2 {
-
-    color: rgb(49, 33, 14);
-    font-size: 2.5rem;
-}
-
-.presentacion-senderismo p {
-    margin-top: 1.2rem;
-    margin-left: 1rem;
-    color: rgb(22, 114, 139);
-    font-size: 1.5rem;
-    font-family: serif;
-
-
-}
-
-
-
-
-
-.video-send {
-    width: 25rem;
-    position: relative;
-    border-radius: 15px;
-    justify-self: center;
-}
-
-.beneficios-tips-subtitulo {
-    color: rgb(221, 134, 20);
-    font-size: 2rem;
-    font-family: 'Bree Serif';
-    background-color: rgba(0, 0, 0, 0.879);
-    margin:0;
-    -webkit-background-clip: unset;
-    border-radius: 15px;
-    width: 90vh;
-    justify-self: center;
-    padding-inline: 1rem;
-
-}
-
-.grid-container {
-    margin-top: 10rem;
-    display: grid;
-    column-gap: 20rem;
-    grid-template-columns: 1fr;
-    justify-self: center;
-}
-
-.grid-container article {
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    align-content: center;
-}
-
-.video-benef {
-    height: 40rem;
-    border-radius: 15px;
-}
-
-.video-tips {
-    height: 40rem;
-    border-radius: 15px;
-}
-
-.grid-container article h3 {
-    justify-self: center;
-    align-self: center;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    font-size: 2rem;
-    font-family: 'Bree Serif';
-    background-color: antiquewhite;
-    border-radius: 10px;
-    padding: 0px 3px 0px 3px;
-
-
-}
-
-.tipos-de-senderismo {
-
-    margin-block: 3rem;
-    background-color: rgba(250, 235, 215, 0.88);
-    border-radius: 20px;
-    padding: 2rem;
-    width:80vh;
-    border: solid 1px;
-    justify-self:center;
-
-}
-
-.tipos-de-senderismo h3 {
-    margin-left: 1rem;
-    font-family: 'Times New Roman';
-    font-size: 1.8rem
-}
-
-.tipos-de-senderismo ul li {
-
-    display: flex;
-    border: solid black 1px;
-    margin-block: 1rem;
-    margin-left: 1rem;
-    border-radius: 5px;
-    width: fit-content;
-    padding: 1rem;
-    font-size: 1.3rem;
-
-
-}
-
-.donde-realizarlo {
-    background-color: rgba(42, 121, 11, 0.295);
-    width: 95vh;
-    margin-left: 1rem;
-}
-
-.donde-realizarlo article {
-
-    background-color: antiquewhite;
-    padding-top: 1px;
-    margin-inline: 1rem;
-    border-radius: 15px;
-    border: solid 1px;
-
-}
-
-.donde-realizarlo article h3 {
-    display: flex;
-    font-family: 'Times New Roman';
-    font-size: 1.7rem;
-    margin-top: 1rem;
-    justify-content: center;
-
-}
-
-.donde-realizarlo article p {
-
-    padding-block: 1rem 0.5rem;
-    font-size: 1.2rem;
-    margin-left: 1rem;
-
-}
-
-.mapas {
-    margin-top: 3rem;
-    display: flex;
-    overflow: auto;
-    gap: 1rem;
-    margin-left: 1rem;
-
-}
-
-.mapas h3 {
-
-    font-size: 1.5rem;
-
-}
+    }
+
+    .header-senderismo img {
+
+        width: 10rem;
+        position: relative;
+    }
+
+    .header-senderismo h1 {
+        color: #0a0f32d1;
+        font-size: 5rem;
+        display: flex;
+        justify-content: center;
+        position: sticky;
+        top: 0px;
+        background-color: antiquewhite;
+        border-radius: 100px;
+    }
+
+    .main-send {
+        display: grid;
+        width: 100vh;
+        row-gap: 2rem;
+        margin-bottom: 2rem;
+        justify-content: center;
+
+    }
+
+    .presentacion-senderismo {
+        display: grid;
+        justify-self: center;
+        background-color: rgba(16, 130, 54, 0);
+        padding-block: 1rem;
+        margin-block: 2rem;
+        border-top: solid 1px;
+        row-gap: 2rem;
+
+    }
+
+    .que-es {
+        justify-self: center;
+        border: solid;
+        background-color: rgba(255, 228, 196, 0.849);
+        height: fit-content;
+        padding: 1.5rem;
+        border-radius: 10px;
+    }
+
+    .donde-se-hace {
+        background-color: rgba(255, 228, 196, 0.776);
+        border: solid black;
+        margin: 0;
+        height: fit-content;
+        padding: 1.5rem;
+        border-radius: 10px;
+
+
+    }
+
+    .presentacion-senderismo h2 {
+
+        color: rgb(49, 33, 14);
+        font-size: 2.5rem;
+    }
+
+    .presentacion-senderismo p {
+        margin-top: 1.2rem;
+        margin-left: 1rem;
+        color: rgb(22, 114, 139);
+        font-size: 1.5rem;
+        font-family: serif;
+
+
+    }
+
+
+
+
+
+    .video-send {
+        width: 25rem;
+        position: relative;
+        border-radius: 15px;
+        justify-self: center;
+    }
+
+    .beneficios-tips-subtitulo {
+        color: rgb(221, 134, 20);
+        font-size: 2rem;
+        font-family: 'Bree Serif';
+        background-color: rgba(0, 0, 0, 0.879);
+        margin: 0;
+        -webkit-background-clip: unset;
+        border-radius: 15px;
+        width: 90vh;
+        justify-self: center;
+        padding-inline: 1rem;
+
+    }
+
+    .grid-container {
+        margin-top: 10rem;
+        display: grid;
+        column-gap: 20rem;
+        grid-template-columns: 1fr;
+        justify-self: center;
+    }
+
+    .grid-container article {
+        display: grid;
+        grid-template-rows: repeat(1, 1fr);
+        align-content: center;
+    }
+
+    .video-benef {
+        height: 40rem;
+        border-radius: 15px;
+    }
+
+    .video-tips {
+        height: 40rem;
+        border-radius: 15px;
+    }
+
+    .grid-container article h3 {
+        justify-self: center;
+        align-self: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-family: 'Bree Serif';
+        background-color: antiquewhite;
+        border-radius: 10px;
+        padding: 0px 3px 0px 3px;
+
+
+    }
+
+    .tipos-de-senderismo {
+
+        margin-block: 3rem;
+        background-color: rgba(250, 235, 215, 0.88);
+        border-radius: 20px;
+        padding: 2rem;
+        width: 80vh;
+        border: solid 1px;
+        justify-self: center;
+
+    }
+
+    .tipos-de-senderismo h3 {
+        margin-left: 1rem;
+        font-family: 'Times New Roman';
+        font-size: 1.8rem
+    }
+
+    .tipos-de-senderismo ul li {
+
+        display: flex;
+        border: solid black 1px;
+        margin-block: 1rem;
+        margin-left: 1rem;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 1rem;
+        font-size: 1.3rem;
+
+
+    }
+
+    .donde-realizarlo {
+        background-color: rgba(42, 121, 11, 0.295);
+        width: 95vh;
+        margin-left: 1rem;
+    }
+
+    .donde-realizarlo article {
+
+        background-color: antiquewhite;
+        padding-top: 1px;
+        margin-inline: 1rem;
+        border-radius: 15px;
+        border: solid 1px;
+
+    }
+
+    .donde-realizarlo article h3 {
+        display: flex;
+        font-family: 'Times New Roman';
+        font-size: 1.7rem;
+        margin-top: 1rem;
+        justify-content: center;
+
+    }
+
+    .donde-realizarlo article p {
+
+        padding-block: 1rem 0.5rem;
+        font-size: 1.2rem;
+        margin-left: 1rem;
+
+    }
+
+    .mapas {
+        margin-top: 3rem;
+        display: flex;
+        overflow: auto;
+        gap: 1rem;
+        margin-left: 1rem;
+
+    }
+
+    .mapas h3 {
+
+        font-size: 1.5rem;
+
+    }
 
 }
 
