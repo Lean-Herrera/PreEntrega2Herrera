@@ -62,7 +62,6 @@ header img {
 
 
     object-fit: cover;
-    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -445,9 +444,10 @@ footer {
 
 
 .video-send {
-    width: 25rem;
+    /* width: 25rem; */
     position: relative;
     border-radius: 15px;
+    z-index: -1;
 }
 
 .beneficios-tips-subtitulo {
@@ -480,11 +480,15 @@ footer {
 .video-benef {
     height: 40rem;
     border-radius: 15px;
+    width: 20rem;
+    z-index: -1;
 }
 
 .video-tips {
     height: 40rem;
     border-radius: 15px;
+    width: 20rem;
+    z-index: -1;
 }
 
 .grid-container article h3 {
@@ -745,8 +749,10 @@ header img {
     align-self: center;
     justify-self: center;
     width: 25rem;
+    height: 40rem;
     position: relative;
     border-radius: 15px;
+    z-index: -1;
 }
 
 .main-camping section {
@@ -808,8 +814,10 @@ header img {
     justify-self: center;
     align-self: center;
     display: grid;
+    height: 40rem;
     width: 25rem;
     border-radius: 15px;
+    z-index: -1;
 
 }
 
@@ -817,8 +825,10 @@ header img {
     justify-self: center;
     align-self: center;
     display: grid;
+    height: 40rem;
     width: 25rem;
     border-radius: 15px;
+    z-index: -1;
 }
 
 .main-camping section h3 {
@@ -1205,6 +1215,7 @@ header img {
         align-self: center;
         justify-self: center;
         width: 25rem;
+        height: 40rem;
         position: relative;
         border-radius: 15px;
     }
@@ -1225,6 +1236,11 @@ header img {
 
     }
 
+    .articulos-camping {
+        display: grid;
+        grid-template-columns:  1fr;
+    
+    }
 
     .main-camping article {
         display: grid;
@@ -1378,6 +1394,7 @@ header img {
         position: relative;
         border-radius: 15px;
         justify-self: center;
+        height: 40rem;
     }
 
     .beneficios-tips-subtitulo {
@@ -1758,7 +1775,6 @@ header img {
         border-radius: 5px;
         padding: 0;
         justify-content: center;
-
         width: 100vh;
     }
 
@@ -1766,6 +1782,7 @@ header img {
         display: grid;
         grid-column: span 2;
         justify-content: center;
+        
     }
 
 
