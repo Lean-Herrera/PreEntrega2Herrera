@@ -111,10 +111,6 @@
     .main-index {
 
 
-
-
-
-
         .subtitulo-seccion {
             display: flex;
             margin-left: 2rem;
@@ -853,66 +849,67 @@ footer {
     }
 
 
-.video-camping {
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    width: 25rem;
-    height: 40rem;
-    position: relative;
-    border-radius: 15px;
+    .video-camping {
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        width: 25rem;
+        height: 40rem;
+        position: relative;
+        border-radius: 15px;
+
+    }
+
+    .que-es {
+        p {
+            font-size: 1.2rem;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+
+    }
+
+    .articulos-camping {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .video-que-necesito {
+        justify-self: center;
+        align-self: center;
+        display: grid;
+        height: 40rem;
+        width: 25rem;
+        border-radius: 15px;
+
+
+    }
+
+    .video-recomendaciones {
+        justify-self: center;
+        align-self: center;
+        display: grid;
+        height: 40rem;
+        width: 25rem;
+        border-radius: 15px;
+
+    }
 
 }
-
-.que-es{
-p {
-    font-size: 1.2rem;
-}
-
- h2 {
-    font-size: 2rem;
-}
-
-}
-
-.articulos-camping {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-
-}
-
-.video-que-necesito {
-    justify-self: center;
-    align-self: center;
-    display: grid;
-    height: 40rem;
-    width: 25rem;
-    border-radius: 15px;
-
-
-}
-
-.video-recomendaciones {
-    justify-self: center;
-    align-self: center;
-    display: grid;
-    height: 40rem;
-    width: 25rem;
-    border-radius: 15px;
-
-}
-
-}
-
-
-/* INDEX TABLET */
-
 
 
 /* ------------INDEX MOBILE----------------------- */
 
 
 @media (max-width:500px) {
+
+    .capa {
+        display: none;
+    }
+
     .body-principal {
 
         background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
@@ -920,48 +917,128 @@ p {
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-    }
 
-    .video-index {
-        display: none;
-    }
-
-    /* .body-principal{
-    min-height: 100vh;
-    position:relative;
-}
-  */
-
-    .capa {
-
-        display: none;
-    }
-
-    .header-index {
+        .video-index {
+            display: none;
+        }
 
 
-        display: grid;
-        grid-template-columns: 40%;
-        align-items: center;
-        height: fit-content;
+        .header-index {
+
+
+            display: grid;
+            grid-template-columns: 40%;
+            align-items: center;
+            height: fit-content;
+            width: 100vh;
+
+            img {
+                display: grid;
+                width: 10rem;
+                position: relative;
+            }
+
+            h1 {
+                color: #0a0f32d1;
+                font-size: 5rem;
+                display: flex;
+                justify-content: center;
+                position: sticky;
+                top: 0px;
+            }
+
+            nav {
+                display: grid;
+                grid-column: span 2;
+                justify-content: center;
+
+                ul.menu {
+                    gap: 1rem;
+                    align-items: center;
+                    right: 0px;
+                    position: relative;
+                    list-style-type: none;
+                    display: flex;
+                    background-color: rgb(0, 0, 0, 0.7);
+                    border-radius: 5px;
+                    padding: 0;
+                    justify-content: center;
+                    width: 100vh;
+
+                    li {
+
+                        display: grid;
+                        margin-left: 0;
+                    }
+
+                    a {
+                        text-decoration: underline;
+                        color: #f48a20d1;
+                        font-size: 1.2rem;
+                    }
+                }
+
+
+            }
+
+
+        }
+
+
+        
+    .main-index {
         width: 100vh;
-
-    }
-
-    .header-index img {
         display: grid;
-        width: 10rem;
-        position: relative;
+        row-gap: 2rem;
+
+
+        .subtitulo-seccion {
+
+            flex-direction: column;
+            align-items: center;
+            margin-left: 2rem;
+            border-radius: 10px;
+            gap: 1rem;
+            margin-bottom: 0;
+
+            section {
+                height: fit-content;
+                width: 90vh;
+                background-color: rgba(255, 251, 196, 0.263);
+                border-radius: 10px;
+                margin-right: 2rem;
+                align-items: center;
+            }
+
+            h2 {
+
+                color: rgb(12, 14, 14);
+                font-size: 2.5rem;
+                display: flex;
+                justify-content: center;
+                margin-block: 1rem 2rem;
+
+
+            }
+
+            p {
+                margin-left: 1rem;
+                color: aliceblue;
+                font-size: 2rem;
+                font-family: serif;
+                padding: 1rem 1rem 2rem 1rem;
+
+            }
+
+        }
+
     }
 
-    .header-index h1 {
-        color: #0a0f32d1;
-        font-size: 5rem;
-        display: flex;
-        justify-content: center;
-        position: sticky;
-        top: 0px;
+
     }
+
+
+
 
     .subtitulo-principal {
         font-size: 1.2rem;
@@ -970,113 +1047,18 @@ p {
 
     }
 
-    ul.menu {
-        gap: 1rem;
-        align-items: center;
-        right: 0px;
-        position: relative;
-        list-style-type: none;
-        display: flex;
-        background-color: rgb(0, 0, 0, 0.7);
-        border-radius: 5px;
-        padding: 0;
-        justify-content: center;
-
-        width: 100vh;
-    }
-
-    nav {
-        display: grid;
-        grid-column: span 2;
-        justify-content: center;
-    }
-
-
-
-
-
-    nav ul li {
-
-        display: grid;
-        margin-left: 0;
-    }
-
-    header a {
-        text-decoration: underline;
-        color: #f48a20d1;
-        font-size: 1.2rem;
-    }
-
-    .main-index {
-        width: 100vh;
-        display: grid;
-        row-gap: 2rem;
-    }
-
-
-
-    .subtitulo-seccion {
-
-        display: block;
-        align-items: center;
-        margin-left: 2rem;
-        border-radius: 10px;
-        gap: 1rem;
-        margin-bottom: 0;
-
-
-    }
-
-
-    .subtitulo-seccion section {
-        height: fit-content;
-        width: 90vh;
-        background-color: rgba(255, 251, 196, 0.263);
-        border-radius: 10px;
-        margin-right: 2rem;
-        align-items: center;
-    }
-
-    .subtitulo-seccion h2 {
-
-        color: rgb(12, 14, 14);
-        font-size: 2.5rem;
-        display: flex;
-        justify-content: center;
-        margin-block: 1rem 2rem;
-
-
-
-    }
-
-    .subtitulo-seccion p {
-        margin-left: 1rem;
-        color: aliceblue;
-        font-size: 2rem;
-        font-family: serif;
-        padding: 1rem 1rem 2rem 1rem;
-
-
-    }
-
-
     .imagen-principal {
-
-
-        width: 90vh;
-        height: 20rem;
+        width: 100rem;
+        height: 30rem;
         background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
         background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
+        background-size: contain;
+        background-position: right;
+        background-attachment: fixed;
+        margin-left: 1rem;
         border-radius: 15px;
-        margin-left: 0;
-        margin-right: 0;
-
-
-
+        margin-right: 2rem;
     }
-
 
 
     .imagen-secundaria {
