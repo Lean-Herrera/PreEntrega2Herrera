@@ -1,0 +1,285 @@
+.body-senderismo {
+    min-height: 100vh;
+    position: relative;
+
+    .video-senderismo {
+
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+    }
+
+    .header-senderismo {
+
+
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 15rem;
+
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+
+            color: bisque;
+            font-size: 4rem;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0px;
+
+        }
+
+
+        img {
+            width: 15rem;
+            display: flex;
+            float: left;
+            position: fixed;
+            z-index: 1;
+        }
+
+
+        nav {
+            ul.menu {
+
+
+                right: 0px;
+                position: relative;
+                list-style-type: none;
+                display: flex;
+                float: inline-end;
+                padding: 0px 25px;
+                background-color: rgb(0, 0, 0, 0.7);
+                border-radius: 5px;
+
+
+
+
+
+                li {
+
+                    display: flex;
+                    margin-left: 1rem;
+                }
+
+
+            }
+
+            a {
+                text-decoration: underline;
+                color: #f48a20d1;
+                font-size: 1.2rem;
+            }
+
+
+        }
+
+
+    }
+
+    .main-send {
+
+        .presentacion-senderismo {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgba(16, 130, 54, 0);
+            padding-block: 1rem;
+            margin-block: 2rem;
+            border-top: solid 1px;
+
+
+            h2 {
+
+                color: rgb(49, 33, 14);
+                font-size: 2.5rem;
+            }
+
+
+            p {
+                margin-top: 1.2rem;
+                margin-left: 1rem;
+                color: rgb(22, 114, 139);
+                font-size: 1.5rem;
+                font-family: serif;
+
+
+            }
+
+        }
+
+        .que-es {
+
+            border: solid;
+            background-color: rgba(255, 228, 196, 0.849);
+            height: fit-content;
+            padding: 1.5rem;
+            border-radius: 10px;
+        }
+
+        .donde-se-hace {
+            background-color: rgba(255, 228, 196, 0.776);
+            border: solid black;
+            margin-top: 25vh;
+            height: fit-content;
+            padding: 1.5rem;
+            border-radius: 10px;
+
+
+        }
+
+
+        .video-send {
+
+            position: relative;
+            border-radius: 15px;
+
+        }
+
+        .beneficios-tips-subtitulo {
+            color: antiquewhite;
+            font-size: 2rem;
+            font-family: 'Bree Serif';
+            background-color: rgb(0, 0, 0);
+            -webkit-background-clip: text;
+            margin-left: 2rem;
+            margin-top: 3rem;
+
+
+
+        }
+
+        .grid-container {
+            margin-top: 10rem;
+            display: grid;
+            column-gap: 20rem;
+            grid-template-columns: auto auto;
+            justify-content: center;
+
+            article {
+                display: grid;
+                grid-template-rows: repeat(1, 1fr);
+                align-content: center;
+            }
+
+            .video-benef {
+                height: 40rem;
+                border-radius: 15px;
+                width: 20rem;
+
+            }
+
+
+            .video-tips {
+                height: 40rem;
+                border-radius: 15px;
+                width: 20rem;
+
+            }
+
+            h3 {
+                justify-self: center;
+                align-self: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                font-size: 2rem;
+                font-family: 'Bree Serif';
+                background-color: antiquewhite;
+                border-radius: 10px;
+                padding: 0px 3px 0px 3px;
+
+
+            }
+
+        }
+
+
+
+        .tipos-de-senderismo {
+
+            margin-block: 3rem;
+            background-color: rgba(250, 235, 215, 0.88);
+            border-radius: 20px;
+            padding: 2rem;
+            width: 75vw;
+            border: solid 1px;
+
+            h3 {
+                margin-left: 1rem;
+                font-family: 'Times New Roman';
+                font-size: 1.8rem
+            }
+
+            ul li {
+
+                display: flex;
+                border: solid black 1px;
+                margin-block: 1rem;
+                margin-left: 1rem;
+                border-radius: 5px;
+                width: fit-content;
+                padding: 1rem;
+                font-size: 1.3rem;
+
+
+            }
+
+
+        }
+
+
+        .donde-realizarlo {
+            background-color: rgba(42, 121, 11, 0.295);
+
+            article {
+
+                background-color: antiquewhite;
+                padding-top: 1px;
+                margin-inline: 1rem;
+                border-radius: 15px;
+                border: solid 1px;
+
+
+                h3 {
+                    display: flex;
+                    font-family: 'Times New Roman';
+                    font-size: 1.7rem;
+                    margin-top: 1rem;
+                    justify-content: center;
+
+                }
+
+                p {
+
+                    padding-block: 1rem 0.5rem;
+                    font-size: 1.2rem;
+                    margin-left: 1rem;
+
+                }
+
+            }
+
+
+            .mapas {
+                margin-top: 3rem;
+                display: flex;
+                overflow: auto;
+                gap: 1rem;
+                margin-left: 1rem;
+
+                h3 {
+
+                    font-size: 1.5rem;
+
+                }
+
+            }
+
+        }
+    }
+}

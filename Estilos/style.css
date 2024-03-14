@@ -141,8 +141,372 @@
   margin-block: 1rem 2rem;
 }
 
-/*--Pongo el footer afuera del body, porque es el 
-mismo para todas las secciones--*/
+@media (max-width: 500px) {
+  .capa {
+    display: none;
+  }
+  .body-principal {
+    background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vh;
+  }
+  .body-principal .video-index {
+    display: none;
+  }
+  .body-principal .header-index {
+    display: grid;
+    grid-template-columns: 30%;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+  }
+  .body-principal .header-index h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+  }
+  .body-principal .header-index .subtitulo-principal {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .body-principal .header-index img {
+    display: grid;
+    width: 100%;
+    position: relative;
+  }
+  .body-principal .header-index nav {
+    display: grid;
+    grid-column: span 2;
+    justify-content: center;
+  }
+  .body-principal .header-index nav ul.menu {
+    gap: 1rem;
+    align-items: center;
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 0;
+    justify-content: center;
+    width: 100vh;
+  }
+  .body-principal .header-index nav ul.menu li {
+    display: grid;
+    margin-left: 0;
+  }
+  .body-principal .header-index nav ul.menu a {
+    text-decoration: underline;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+  }
+  .body-principal .main-index {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-block: 2rem;
+  }
+  .body-principal .main-index .subtitulo-seccion {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    border-radius: 10px;
+    gap: 1rem;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .body-principal .main-index .subtitulo-seccion section {
+    height: fit-content;
+    width: 90vh;
+    background-color: rgba(255, 251, 196, 0.263);
+    border-radius: 10px;
+    margin-right: 0;
+    align-items: center;
+  }
+  .body-principal .main-index .subtitulo-seccion section h2 {
+    color: rgb(12, 14, 14);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem 2rem;
+  }
+  .body-principal .main-index .subtitulo-seccion section p {
+    margin-left: 1rem;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: serif;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .body-principal .main-index .subtitulo-seccion .imagen-principal {
+    width: 90vh;
+    height: 30rem;
+    background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    margin-left: 0;
+    border-radius: 15px;
+    margin-right: 0;
+  }
+  .body-principal .main-index .subtitulo-seccion .imagen-secundaria {
+    width: 90vh;
+    height: 30rem;
+    background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    background-attachment: local;
+    margin-right: 0;
+    border-radius: 20px;
+  }
+  .body-principal .main-index .a-viajar {
+    height: auto;
+    background-color: rgba(255, 251, 196, 0.263);
+    border-radius: 10px;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: serif;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .body-principal .main-index .a-viajar h2 {
+    color: rgb(12, 14, 14);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem 2rem;
+  }
+  .body-principal footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    width: 100vh;
+    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 1fr;
+    border-width: 2rem;
+  }
+  .body-principal footer .logo-footer img {
+    width: 12rem;
+  }
+  .body-principal footer .redes {
+    grid-column: span 2;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin-bottom: 3rem;
+    grid-template-rows: 1fr 1fr;
+  }
+  .body-principal footer .redes h3 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: peru;
+  }
+  .body-principal footer .redes ul {
+    display: flex;
+    height: fit-content;
+    column-gap: 1rem;
+    /* margin-left: 38rem; */
+  }
+  .body-principal footer .redes a {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  .body-principal footer .redes a img {
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+  }
+  .body-principal footer .contacto {
+    align-items: center;
+    display: grid;
+    row-gap: 1rem;
+  }
+  .body-principal footer .contacto h3 {
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: peru;
+    margin-left: 3rem;
+  }
+  .body-principal footer .contacto ul li {
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-principal {
+    background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100vh;
+  }
+  .body-principal .video-index {
+    display: none;
+  }
+  .body-principal .capa {
+    display: none;
+  }
+  .body-principal .header-index {
+    display: grid;
+    grid-template-columns: 40%;
+    align-items: center;
+    height: fit-content;
+    width: 100vh;
+    grid-template-rows: 60%;
+    /*Indica el alto de la primera fila*/
+  }
+  .body-principal .header-index a {
+    width: fit-content;
+    height: 100%;
+  }
+  .body-principal .header-index img {
+    display: grid;
+    width: 100%;
+    height: 120%;
+    position: relative;
+  }
+  .body-principal .header-index h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+  }
+  .body-principal .header-index .subtitulo-principal {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+  }
+  .body-principal .header-index nav {
+    align-self: start;
+    display: grid;
+    grid-column: span 2;
+    justify-content: center;
+    height: 3rem;
+  }
+  .body-principal .header-index nav ul {
+    gap: 1rem;
+    align-items: center;
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    padding: 0;
+    justify-content: center;
+    width: 100vh;
+  }
+  .body-principal .header-index nav li {
+    display: grid;
+    margin-left: 0;
+    font-size: 1rem;
+  }
+  .body-principal .header-index nav li header a {
+    text-decoration: underline;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 2rem;
+  }
+  .body-principal .main-index {
+    width: 100%;
+    display: grid;
+    row-gap: 2rem;
+    margin-block: 2rem;
+  }
+  .body-principal .main-index .subtitulo-seccion {
+    justify-self: center;
+    display: grid;
+    align-items: center;
+    margin-left: 0;
+    border-radius: 10px;
+    gap: 1rem;
+    margin-bottom: 0;
+    grid-template-columns: 45% 55%;
+    width: 90%;
+  }
+  .body-principal .main-index .subtitulo-seccion section {
+    height: fit-content;
+    background-color: rgba(255, 251, 196, 0.263);
+    border-radius: 10px;
+    margin-right: 0;
+    align-items: center;
+  }
+  .body-principal .main-index .subtitulo-seccion h2 {
+    color: rgb(12, 14, 14);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem 2rem;
+  }
+  .body-principal .main-index .subtitulo-seccion p {
+    margin-left: 1rem;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: serif;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .body-principal .main-index .subtitulo-seccion .imagen-principal {
+    width: 100%;
+    height: 100%;
+    background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    border-radius: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .body-principal .main-index .subtitulo-seccion .imagen-secundaria {
+    width: 100%;
+    height: 100%;
+    background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    background-attachment: fixed;
+    margin-right: 0;
+    border-radius: 20px;
+  }
+  .body-principal .main-index .a-viajar {
+    justify-self: center;
+    height: auto;
+    background-color: rgba(255, 251, 196, 0.263);
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: serif;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .body-principal .main-index .a-viajar h2 {
+    color: rgb(12, 14, 14);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem 2rem;
+  }
+}
+/*Pongo el footer afuera del body, porque es el 
+mismo para todas las secciones*/
 footer {
   background-color: rgba(0, 0, 0, 0.8);
   display: flex;
@@ -481,8 +845,7 @@ footer h3 {
   min-height: 100vh;
   position: relative;
 }
-
-.video-fondo-camping {
+.body-camping .video-fondo-camping {
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -491,8 +854,7 @@ footer h3 {
   height: 100%;
   z-index: -1;
 }
-
-.header-camping {
+.body-camping .header-camping {
   display: grid;
   grid-template-columns: 1fr 1fr 2fr;
   align-items: center;
@@ -500,7 +862,7 @@ footer h3 {
   padding-bottom: 2rem;
   margin-bottom: 1rem;
 }
-.header-camping nav ul.menu {
+.body-camping .header-camping nav ul.menu {
   right: 0px;
   position: relative;
   list-style-type: none;
@@ -510,23 +872,23 @@ footer h3 {
   background-color: rgba(0, 0, 0, 0.7);
   border-radius: 5px;
 }
-.header-camping nav ul.menu li {
+.body-camping .header-camping nav ul.menu li {
   display: flex;
   margin-left: 1rem;
 }
-.header-camping nav a {
+.body-camping .header-camping nav a {
   text-decoration: underline;
   color: rgba(244, 138, 32, 0.8196078431);
   font-size: 1.2rem;
 }
-.header-camping img {
+.body-camping .header-camping img {
   width: 15rem;
   display: grid;
   position: relative;
   float: left;
   z-index: 1;
 }
-.header-camping h1 {
+.body-camping .header-camping h1 {
   color: rgba(10, 15, 50, 0.8196078431);
   font-size: 5rem;
   display: flex;
@@ -536,13 +898,12 @@ footer h3 {
   background-color: antiquewhite;
   border-radius: 100px;
 }
-
-.main-camping {
+.body-camping .main-camping {
   display: grid;
   row-gap: 2rem;
   margin-bottom: 2rem;
 }
-.main-camping section {
+.body-camping .main-camping section {
   display: grid;
   align-self: center;
   align-items: center;
@@ -555,29 +916,29 @@ footer h3 {
   padding: 1.5rem;
   border-radius: 10px;
 }
-.main-camping section h2 {
+.body-camping .main-camping section h2 {
   font-size: 2rem;
 }
-.main-camping section p {
+.body-camping .main-camping section p {
   font-size: 1.2rem;
 }
-.main-camping section h3 {
+.body-camping .main-camping section h3 {
   font-size: 2rem;
 }
-.main-camping section h3 {
+.body-camping .main-camping section h3 {
   justify-self: center;
   align-items: center;
 }
-.main-camping article {
+.body-camping .main-camping article {
   display: grid;
   row-gap: 1rem;
 }
-.main-camping article h2 {
+.body-camping .main-camping article h2 {
   justify-self: center;
   background-color: rgba(255, 228, 196, 0.849);
   border-radius: 10px;
 }
-.main-camping .video-camping {
+.body-camping .main-camping .video-camping {
   display: flex;
   align-self: center;
   justify-self: center;
@@ -586,17 +947,17 @@ footer h3 {
   position: relative;
   border-radius: 15px;
 }
-.main-camping .que-es p {
+.body-camping .main-camping .que-es p {
   font-size: 1.2rem;
 }
-.main-camping .que-es h2 {
+.body-camping .main-camping .que-es h2 {
   font-size: 2rem;
 }
-.main-camping .articulos-camping {
+.body-camping .main-camping .articulos-camping {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
-.main-camping .video-que-necesito {
+.body-camping .main-camping .video-que-necesito {
   justify-self: center;
   align-self: center;
   display: grid;
@@ -604,7 +965,7 @@ footer h3 {
   width: 25rem;
   border-radius: 15px;
 }
-.main-camping .video-recomendaciones {
+.body-camping .main-camping .video-recomendaciones {
   justify-self: center;
   align-self: center;
   display: grid;
@@ -615,211 +976,6 @@ footer h3 {
 
 /* ------------INDEX MOBILE----------------------- */
 @media (max-width: 500px) {
-  .capa {
-    display: none;
-  }
-  .body-principal {
-    background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .body-principal .video-index {
-    display: none;
-  }
-  .body-principal .header-index {
-    display: grid;
-    grid-template-columns: 40%;
-    align-items: center;
-    height: fit-content;
-    width: 100vh;
-  }
-  .body-principal .header-index img {
-    display: grid;
-    width: 10rem;
-    position: relative;
-  }
-  .body-principal .header-index h1 {
-    color: rgba(10, 15, 50, 0.8196078431);
-    font-size: 5rem;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-  }
-  .body-principal .header-index nav {
-    display: grid;
-    grid-column: span 2;
-    justify-content: center;
-  }
-  .body-principal .header-index nav ul.menu {
-    gap: 1rem;
-    align-items: center;
-    right: 0px;
-    position: relative;
-    list-style-type: none;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    padding: 0;
-    justify-content: center;
-    width: 100vh;
-  }
-  .body-principal .header-index nav ul.menu li {
-    display: grid;
-    margin-left: 0;
-  }
-  .body-principal .header-index nav ul.menu a {
-    text-decoration: underline;
-    color: rgba(244, 138, 32, 0.8196078431);
-    font-size: 1.2rem;
-  }
-  .body-principal .main-index {
-    width: 100vh;
-    display: grid;
-    row-gap: 2rem;
-  }
-  .body-principal .main-index .subtitulo-seccion {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 2rem;
-    border-radius: 10px;
-    gap: 1rem;
-    margin-bottom: 0;
-  }
-  .body-principal .main-index .subtitulo-seccion section {
-    height: fit-content;
-    width: 90vh;
-    background-color: rgba(255, 251, 196, 0.263);
-    border-radius: 10px;
-    margin-right: 2rem;
-    align-items: center;
-  }
-  .body-principal .main-index .subtitulo-seccion h2 {
-    color: rgb(12, 14, 14);
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    margin-block: 1rem 2rem;
-  }
-  .body-principal .main-index .subtitulo-seccion p {
-    margin-left: 1rem;
-    color: aliceblue;
-    font-size: 2rem;
-    font-family: serif;
-    padding: 1rem 1rem 2rem 1rem;
-  }
-  .subtitulo-principal {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-  }
-  .imagen-principal {
-    width: 100rem;
-    height: 30rem;
-    background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right;
-    background-attachment: fixed;
-    margin-left: 1rem;
-    border-radius: 15px;
-    margin-right: 2rem;
-  }
-  .imagen-secundaria {
-    width: 90vh;
-    height: 30rem;
-    background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    background-attachment: local;
-    margin-right: 0;
-    border-radius: 20px;
-  }
-  .a-viajar {
-    height: auto;
-    background-color: rgba(255, 251, 196, 0.263);
-    border-radius: 10px;
-    margin-right: 2rem;
-  }
-  .a-viajar h2 {
-    color: rgb(12, 14, 14);
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    margin-block: 1rem 2rem;
-  }
-  .a-viajar {
-    margin-left: 1rem;
-    color: aliceblue;
-    font-size: 2rem;
-    font-family: serif;
-    padding: 1rem 1rem 2rem 1rem;
-  }
-  footer {
-    background-color: rgba(0, 0, 0, 0.8);
-    align-items: center;
-    width: 100vh;
-    row-gap: 2rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr 1fr;
-    border-width: 2rem;
-  }
-  .logo-footer img {
-    width: 12rem;
-  }
-  .redes a img {
-    width: 12rem;
-    display: flex;
-    justify-content: center;
-  }
-  .contacto {
-    align-items: center;
-    display: grid;
-    row-gap: 1rem;
-  }
-  .contacto h3 {
-    font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    color: peru;
-    margin-left: 3rem;
-  }
-  .redes {
-    grid-column: span 2;
-    justify-content: center;
-    align-items: center;
-    display: grid;
-    margin-bottom: 3rem;
-    grid-template-rows: 1fr 1fr;
-  }
-  .redes h3 {
-    font-size: 1.5rem;
-    display: flex;
-    justify-content: center;
-    color: peru;
-  }
-  .contacto ul li {
-    display: flex;
-    color: aliceblue;
-    justify-content: center;
-  }
-  .redes ul {
-    display: flex;
-    height: fit-content;
-    column-gap: 1rem;
-    /* margin-left: 38rem; */
-  }
-  .redes a {
-    color: aliceblue;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-  }
-  /* --TABLET CAMPING--- */
   /* --MOBILE CAMPING-- */
   .body-camping {
     height: 20rem;
@@ -1258,153 +1414,6 @@ footer h3 {
     justify-self: center;
     align-self: center;
     color: peru;
-  }
-  .body-principal {
-    background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  }
-  .video-index {
-    display: none;
-  }
-  /* .body-principal{
-      min-height: 100vh;
-      position:relative;
-  }
-    */
-  .capa {
-    display: none;
-  }
-  .header-index {
-    display: grid;
-    grid-template-columns: 40%;
-    align-items: center;
-    height: fit-content;
-    width: 100vh;
-  }
-  .header-index img {
-    display: grid;
-    width: 10rem;
-    position: relative;
-  }
-  .header-index h1 {
-    color: rgba(10, 15, 50, 0.8196078431);
-    font-size: 5rem;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    top: 0px;
-  }
-  .subtitulo-principal {
-    font-size: 1.2rem;
-    display: flex;
-    justify-content: center;
-  }
-  ul.menu {
-    gap: 1rem;
-    align-items: center;
-    right: 0px;
-    position: relative;
-    list-style-type: none;
-    display: flex;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    padding: 0;
-    justify-content: center;
-    width: 100vh;
-  }
-  nav {
-    display: grid;
-    grid-column: span 2;
-    justify-content: center;
-  }
-  nav ul li {
-    display: grid;
-    margin-left: 0;
-  }
-  header a {
-    text-decoration: underline;
-    color: rgba(244, 138, 32, 0.8196078431);
-    font-size: 1.2rem;
-  }
-  .main-index {
-    width: 100vh;
-    display: grid;
-    row-gap: 2rem;
-  }
-  .subtitulo-seccion {
-    display: block;
-    align-items: center;
-    margin-left: 2rem;
-    border-radius: 10px;
-    gap: 1rem;
-    margin-bottom: 0;
-  }
-  .subtitulo-seccion section {
-    height: fit-content;
-    width: 90vh;
-    background-color: rgba(255, 251, 196, 0.263);
-    border-radius: 10px;
-    margin-right: 2rem;
-    align-items: center;
-  }
-  .subtitulo-seccion h2 {
-    color: rgb(12, 14, 14);
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    margin-block: 1rem 2rem;
-  }
-  .subtitulo-seccion p {
-    margin-left: 1rem;
-    color: aliceblue;
-    font-size: 2rem;
-    font-family: serif;
-    padding: 1rem 1rem 2rem 1rem;
-  }
-  .imagen-principal {
-    width: 90vh;
-    height: 20rem;
-    background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    border-radius: 15px;
-    margin-left: 0;
-    margin-right: 0;
-  }
-  .imagen-secundaria {
-    width: 90vh;
-    height: 30rem;
-    background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left;
-    background-attachment: local;
-    margin-right: 0;
-    border-radius: 20px;
-  }
-  .a-viajar {
-    height: auto;
-    background-color: rgba(255, 251, 196, 0.263);
-    border-radius: 10px;
-    margin-right: 2rem;
-  }
-  .a-viajar h2 {
-    color: rgb(12, 14, 14);
-    font-size: 2.5rem;
-    display: flex;
-    justify-content: center;
-    margin-block: 1rem 2rem;
-  }
-  .a-viajar {
-    margin-left: 1rem;
-    color: aliceblue;
-    font-size: 2rem;
-    font-family: serif;
-    padding: 1rem 1rem 2rem 1rem;
   }
   /* ---SENDERISMO TABLET--- */
   .body-senderismo {
