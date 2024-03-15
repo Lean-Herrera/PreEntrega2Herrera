@@ -2,185 +2,489 @@
     min-height: 100vh;
     position: relative;
 
-  .video-fondo-camping {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
+    .video-fondo-camping {
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
 
-}
-
-
-.header-camping {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    align-items: center;
-    height: fit-content;
-    padding-bottom: 2rem;
-    margin-bottom: 1rem;
-
-    nav {
-        ul.menu {
+    }
 
 
-            right: 0px;
-            position: relative;
-            list-style-type: none;
-            display: flex;
-            float: inline-end;
-            padding: 0px 25px;
-            background-color: rgb(0, 0, 0, 0.7);
-            border-radius: 5px;
+    .header-camping {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+        align-items: center;
+        height: fit-content;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+
+        nav {
+            ul.menu {
 
 
-
-
-
-            li {
-
+                right: 0px;
+                position: relative;
+                list-style-type: none;
                 display: flex;
-                margin-left: 1rem;
+                float: inline-end;
+                padding: 0px 25px;
+                background-color: rgb(0, 0, 0, 0.7);
+                border-radius: 5px;
+
+
+
+
+
+                li {
+
+                    display: flex;
+                    margin-left: 1rem;
+                }
+
+
+            }
+
+            a {
+                text-decoration: underline;
+                color: #f48a20d1;
+                font-size: 1.2rem;
             }
 
 
         }
 
-        a {
-            text-decoration: underline;
-            color: #f48a20d1;
-            font-size: 1.2rem;
+
+        img {
+            width: 15rem;
+            display: grid;
+            position: relative;
+            float: left;
+            z-index: 1;
         }
 
+        h1 {
+            color: #0a0f32d1;
+            font-size: 5rem;
+            display: flex;
+            justify-content: center;
+            position: sticky;
+            top: 0px;
+            background-color: antiquewhite;
+            border-radius: 100px;
+        }
 
     }
 
-
-    img {
-        width: 15rem;
+    .main-camping {
         display: grid;
-        position: relative;
-        float: left;
-        z-index: 1;
-    }
+        row-gap: 2rem;
+        margin-bottom: 2rem;
 
-    h1 {
-        color: #0a0f32d1;
-        font-size: 5rem;
-        display: flex;
-        justify-content: center;
-        position: sticky;
-        top: 0px;
-        background-color: antiquewhite;
-        border-radius: 100px;
-    }
-
-}
-
-.main-camping {
-    display: grid;
-    row-gap: 2rem;
-    margin-bottom: 2rem;
-
-    section {
-        display: grid;
-        align-self: center;
-        align-items: center;
-        justify-self: center;
-        justify-content: center;
-        border: solid;
-        row-gap: 1rem;
-        background-color: rgba(255, 228, 196, 0.849);
-        height: fit-content;
-        padding: 1.5rem;
-        border-radius: 10px;
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        p {
-            font-size: 1.2rem;
-        }
-
-        h3 {
-            font-size: 2rem;
-        }
-
-        h3 {
-
-            justify-self: center;
+        section {
+            display: grid;
+            align-self: center;
             align-items: center;
-        }
-
-    }
-
-
-    article {
-        display: grid;
-        row-gap: 1rem;
-
-        h2 {
             justify-self: center;
+            justify-content: center;
+            border: solid;
+            row-gap: 1rem;
             background-color: rgba(255, 228, 196, 0.849);
+            height: fit-content;
+            padding: 1.5rem;
             border-radius: 10px;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+
+            h3 {
+                font-size: 2rem;
+            }
+
+            h3 {
+
+                justify-self: center;
+                align-items: center;
+            }
+
         }
 
-    }
 
+        article {
+            display: grid;
+            row-gap: 1rem;
 
-    .video-camping {
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        width: 25rem;
-        height: 40rem;
-        position: relative;
-        border-radius: 15px;
+            h2 {
+                justify-self: center;
+                background-color: rgba(255, 228, 196, 0.849);
+                border-radius: 10px;
+            }
 
-    }
-
-    .que-es {
-        p {
-            font-size: 1.2rem;
         }
 
-        h2 {
-            font-size: 2rem;
+
+        .video-camping {
+            display: flex;
+            align-self: center;
+            justify-self: center;
+            width: 25rem;
+            height: 40rem;
+            position: relative;
+            border-radius: 15px;
+
         }
 
-    }
+        .que-es {
+            p {
+                font-size: 1.2rem;
+            }
 
-    .articulos-camping {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+            h2 {
+                font-size: 2rem;
+            }
 
-    }
+        }
 
-    .video-que-necesito {
-        justify-self: center;
-        align-self: center;
-        display: grid;
-        height: 40rem;
-        width: 25rem;
-        border-radius: 15px;
+        .articulos-camping {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        .video-que-necesito {
+            justify-self: center;
+            align-self: center;
+            display: grid;
+            height: 40rem;
+            width: 25rem;
+            border-radius: 15px;
 
 
-    }
+        }
 
-    .video-recomendaciones {
-        justify-self: center;
-        align-self: center;
-        display: grid;
-        height: 40rem;
-        width: 25rem;
-        border-radius: 15px;
+        .video-recomendaciones {
+            justify-self: center;
+            align-self: center;
+            display: grid;
+            height: 40rem;
+            width: 25rem;
+            border-radius: 15px;
+
+        }
 
     }
 
 }
-  
+
+/* ------------CAMPING MOBILE----------------------- */
+
+@include mq-mobile {
+
+    .body-camping {
+        height: 20rem;
+        background: url("../imagenes-p/cam/wp1857439.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        position: relative;
+
+        .video-fondo-camping {
+            display: none;
+
+        }
+
+        .header-camping {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 1fr 0.5fr;
+            align-items: center;
+            height: fit-content;
+            width: 100vh;
+            padding-bottom: 2rem;
+            margin-bottom: 1rem;
+
+            img {
+                display: grid;
+                width: 10rem;
+                position: relative;
+            }
+
+            h1 {
+                color: #0a0f32d1;
+                font-size: 5rem;
+                display: flex;
+                justify-content: center;
+                position: sticky;
+                top: 0px;
+                background-color: antiquewhite;
+                border-radius: 100px;
+            }
+
+
+            nav {
+
+                display: grid;
+                grid-column: span 2;
+
+                ul.menu {
+
+                    justify-content: center;
+                    position: relative;
+                    border-radius: 10px;
+                    padding: 0px;
+                }
+            }
+
+
+
+        }
+
+        .main-camping {
+            display: grid;
+            width: 100vh;
+            row-gap: 2rem;
+            margin-bottom: 2rem;
+
+
+            .video-camping {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                width: 25rem;
+                height: 40rem;
+                position: relative;
+                border-radius: 15px;
+            }
+
+            section {
+                display: grid;
+                align-self: center;
+                align-items: center;
+                justify-self: center;
+                justify-content: center;
+                border: solid;
+                row-gap: 1rem;
+                background-color: rgba(255, 228, 196, 0.849);
+                height: fit-content;
+                width: 90vh;
+                padding: 1.5rem;
+                border-radius: 10px;
+
+
+                h3 {
+
+                    justify-self: center;
+                    align-items: center;
+                }
+            }
+
+            .articulos-camping {
+                display: grid;
+                grid-template-columns: 1fr;
+
+            }
+
+
+            article {
+                display: grid;
+                row-gap: 1rem;
+
+                h2 {
+                    justify-self: center;
+                    background-color: rgba(255, 228, 196, 0.849);
+                    border-radius: 10px;
+                }
+
+            }
+
+
+
+            .video-que-necesito {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                width: 25rem;
+                position: relative;
+                border-radius: 15px;
+            }
+
+
+            .video-recomendaciones {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                width: 25rem;
+                position: relative;
+                border-radius: 15px;
+            }
+
+
+        }
+
+    }
+
+}
+/* ------------CAMPING TABLET----------------------- */
+
+@include mq-tablet {
+    .body-camping {
+        
+        background: url("../imagenes-p/cam/wp1857439.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        width: 100vh;
+        position: relative;
+
+
+        .capa {
+
+            display: none;
+
+        }
+
+
+        .video-fondo-camping {
+            display: none;
+
+        }
+
+
+        .header-camping {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            height: fit-content;
+            width: 100%;
+            grid-template-rows: 1fr 0.5fr;
+            padding-bottom: 2rem;
+            margin-bottom: 1rem;
+
+            nav {
+                display: grid;
+                grid-column: span 2;
+
+                ul.menu {
+
+                    justify-content: center;
+                    position: relative;
+                    border-radius: 10px;
+                    padding: 0px;
+                }
+
+            }
+
+
+
+            img {
+                display: grid;
+                width: 10rem;
+                position: relative;
+            }
+
+
+            h1 {
+                color: #0a0f32d1;
+                font-size: 5rem;
+                display: flex;
+                justify-content: center;
+                position: sticky;
+                top: 0px;
+                background-color: antiquewhite;
+                border-radius: 100px;
+            }
+
+
+
+        }
+
+        .main-camping {
+            display: grid;
+            width: 100%;
+            row-gap: 2rem;
+            margin-bottom: 2rem;
+
+            .video-camping {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                width: 25rem;
+                position: relative;
+                border-radius: 15px;
+            }
+
+            section {
+                display: grid;
+                align-self: center;
+                align-items: center;
+                justify-self: center;
+                justify-content: center;
+                border: solid;
+                row-gap: 1rem;
+                background-color: rgba(255, 228, 196, 0.849);
+                height: fit-content;
+                width: 90%;
+                padding: 1.5rem;
+                border-radius: 10px;
+
+                h3 {
+
+                    justify-self: center;
+                    align-items: center;
+                }
+
+
+
+            }
+
+            article {
+                display: grid;
+                row-gap: 1rem;
+
+                h2 {
+                    justify-self: center;
+                    background-color: rgba(255, 228, 196, 0.849);
+                    border-radius: 10px;
+
+
+                }
+
+            }
+
+            .video-que-necesito {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                width: 25rem;
+                position: relative;
+                border-radius: 15px;
+            }
+
+            .video-recomendaciones {
+                display: flex;
+                align-self: center;
+                justify-self: center;
+                width: 25rem;
+                position: relative;
+                border-radius: 15px;
+            }
+
+        }
+
+    }
+
+
 }

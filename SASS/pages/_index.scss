@@ -185,6 +185,8 @@
 
 }
 
+/* ------------INDEX MOBILE----------------------- */
+
 @include mq-mobile {
     .capa {
         display: none;
@@ -485,6 +487,8 @@
     }
 
 }
+
+/* ------------INDEX TABLET----------------------- */
 
 @include mq-tablet {
     .body-principal {
