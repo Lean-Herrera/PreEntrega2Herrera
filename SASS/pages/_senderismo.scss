@@ -327,7 +327,7 @@
 
             h1 {
                 color: #0a0f32d1;
-                font-size: 4rem;
+                font-size: 3rem;
                 display: flex;
                 justify-content: center;
                 position: sticky;
@@ -412,7 +412,7 @@
                 height: fit-content;
                 padding: 1.5rem;
                 border-radius: 10px;
-                width: 100%;
+                width: 90%;
             }
 
             .donde-se-hace {
@@ -449,18 +449,20 @@
             }
 
             .grid-container {
-                margin-top: 10rem;
+                margin-top: 2rem;
                 display: grid;
                 column-gap: 2rem;
                 grid-template-columns: 100%;
                 justify-self: center;
-                width: 100%;
+                width: 90%;
 
 
                 article {
                     display: grid;
                     grid-template-rows: repeat(1, 1fr);
                     align-content: center;
+                    justify-self: center;
+                    width: 90%;
 
 
                     h3 {
@@ -477,20 +479,27 @@
 
                     }
 
+                    .video-benef {
+                        height: 50rem;
+                        width: 90%;
+                        border-radius: 15px;
+                        justify-self: center;
+                    }
+
+
+                    .video-tips {
+                        height: 50rem;
+                        width: 90%;
+                        border-radius: 15px;
+                        justify-self: center;
+                    }
+
+
                 }
 
 
-                .video-benef {
-                    height: 50rem;
-                    width: 90%;
-                    border-radius: 15px;
-                }
 
-                .video-tips {
-                    height: 50rem;
-                    width: 90%;
-                    border-radius: 15px;
-                }
+
 
 
 
@@ -505,7 +514,7 @@
                 background-color: rgba(250, 235, 215, 0.88);
                 border-radius: 20px;
                 padding: 2rem;
-                width: 100%;
+                width: 80%;
                 border: solid 1px;
                 justify-self: center;
 
@@ -570,7 +579,8 @@
                     display: flex;
                     overflow: auto;
                     gap: 1rem;
-                    margin-left: 1rem;
+                    margin-left: 0;
+                    padding: 0.2rem;
 
                     h3 {
 
@@ -602,6 +612,8 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
+        display: grid;
+        grid-auto-columns: 100%;
 
 
         .video-senderismo {
@@ -629,7 +641,7 @@
 
             h1 {
                 color: #0a0f32d1;
-                font-size: 5rem;
+                font-size: 4rem;
                 display: flex;
                 justify-content: start;
                 position: sticky;
@@ -639,11 +651,30 @@
                 border-radius: 100px;
             }
 
-
             nav {
                 grid-column: span 2;
+                width: 100%;
+                display: grid;
 
+
+                ul.menu {
+
+                    padding: 0;
+                    align-items: center;
+                    justify-self: center;
+                    gap: 0.5rem;
+
+                    li {
+                        margin-left: 0;
+
+                        a {
+                            font-size: medium;
+                        }
+                    }
+                }
             }
+
+
 
 
 
@@ -658,6 +689,7 @@
             row-gap: 2rem;
             margin-bottom: 2rem;
             justify-content: center;
+            grid-template-columns: 100%;
 
 
             .presentacion-senderismo {
@@ -668,6 +700,7 @@
                 margin-block: 2rem;
                 border-top: solid 1px;
                 row-gap: 2rem;
+                width: 100%;
 
                 h2 {
 
@@ -687,38 +720,46 @@
 
 
 
+                .que-es {
+                    justify-self: center;
+                    border: solid;
+                    background-color: rgba(255, 228, 196, 0.849);
+                    height: fit-content;
+                    padding: 1.5rem;
+                    border-radius: 10px;
+                }
+
+                .donde-se-hace {
+                    background-color: rgba(255, 228, 196, 0.776);
+                    border: solid black;
+                    margin: 0;
+                    height: fit-content;
+                    padding: 0;
+                    border-radius: 10px;
+                    width: 100%;
+
+
+                }
+
+
+                .video-send {
+                    width: 25rem;
+                    position: relative;
+                    border-radius: 15px;
+                    justify-self: center;
+                    height: 40rem;
+                }
+
+
+
+
             }
 
 
 
-            .que-es {
-                justify-self: center;
-                border: solid;
-                background-color: rgba(255, 228, 196, 0.849);
-                height: fit-content;
-                padding: 1.5rem;
-                border-radius: 10px;
-            }
-
-            .donde-se-hace {
-                background-color: rgba(255, 228, 196, 0.776);
-                border: solid black;
-                margin: 0;
-                height: fit-content;
-                padding: 1.5rem;
-                border-radius: 10px;
 
 
-            }
 
-
-            .video-send {
-                width: 25rem;
-                position: relative;
-                border-radius: 15px;
-                justify-self: center;
-                height: 40rem;
-            }
 
             .beneficios-tips-subtitulo {
                 color: rgb(221, 134, 20);
@@ -728,7 +769,7 @@
                 margin: 0;
                 -webkit-background-clip: unset;
                 border-radius: 15px;
-                // width: 90%;
+                width: 90%;
                 justify-self: center;
                 padding-inline: 0;
 
@@ -738,7 +779,7 @@
                 margin-top: 10rem;
                 display: grid;
                 column-gap: 20rem;
-                grid-template-columns:100%;
+                grid-template-columns: 100%;
                 justify-self: center;
 
                 article {
@@ -784,7 +825,7 @@
                 background-color: rgba(250, 235, 215, 0.88);
                 border-radius: 20px;
                 padding: 2rem;
-                width: 80vh;
+                width: 80%;
                 border: solid 1px;
                 justify-self: center;
 
@@ -816,8 +857,11 @@
 
             .donde-realizarlo {
                 background-color: rgba(42, 121, 11, 0.295);
-
+                // overflow: auto;
                 position: relative;
+                width: 100%;
+
+
 
 
 
@@ -828,6 +872,7 @@
                     margin-inline: 1rem;
                     border-radius: 15px;
                     border: solid 1px;
+                    width: 90%;
 
 
                     h3 {

@@ -874,7 +874,7 @@ footer h3 {
   }
   .body-senderismo .header-senderismo h1 {
     color: rgba(10, 15, 50, 0.8196078431);
-    font-size: 4rem;
+    font-size: 3rem;
     display: flex;
     justify-content: center;
     position: sticky;
@@ -935,7 +935,7 @@ footer h3 {
     height: fit-content;
     padding: 1.5rem;
     border-radius: 10px;
-    width: 100%;
+    width: 90%;
   }
   .body-senderismo .main-send .donde-se-hace {
     background-color: rgba(255, 228, 196, 0.776);
@@ -965,17 +965,19 @@ footer h3 {
     padding-inline: 1rem;
   }
   .body-senderismo .main-send .grid-container {
-    margin-top: 10rem;
+    margin-top: 2rem;
     display: grid;
     column-gap: 2rem;
     grid-template-columns: 100%;
     justify-self: center;
-    width: 100%;
+    width: 90%;
   }
   .body-senderismo .main-send .grid-container article {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
     align-content: center;
+    justify-self: center;
+    width: 90%;
   }
   .body-senderismo .main-send .grid-container article h3 {
     justify-self: center;
@@ -988,22 +990,24 @@ footer h3 {
     border-radius: 10px;
     padding: 0px 3px 0px 3px;
   }
-  .body-senderismo .main-send .grid-container .video-benef {
+  .body-senderismo .main-send .grid-container article .video-benef {
     height: 50rem;
     width: 90%;
     border-radius: 15px;
+    justify-self: center;
   }
-  .body-senderismo .main-send .grid-container .video-tips {
+  .body-senderismo .main-send .grid-container article .video-tips {
     height: 50rem;
     width: 90%;
     border-radius: 15px;
+    justify-self: center;
   }
   .body-senderismo .main-send .tipos-de-senderismo {
     margin-block: 3rem;
     background-color: rgba(250, 235, 215, 0.88);
     border-radius: 20px;
     padding: 2rem;
-    width: 100%;
+    width: 80%;
     border: solid 1px;
     justify-self: center;
   }
@@ -1051,7 +1055,8 @@ footer h3 {
     display: flex;
     overflow: auto;
     gap: 1rem;
-    margin-left: 1rem;
+    margin-left: 0;
+    padding: 0.2rem;
   }
   .body-senderismo .main-send .donde-realizarlo .mapas h3 {
     font-size: 1.5rem;
@@ -1065,6 +1070,8 @@ footer h3 {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    display: grid;
+    grid-auto-columns: 100%;
   }
   .body-senderismo .video-senderismo {
     display: none;
@@ -1084,7 +1091,7 @@ footer h3 {
   }
   .body-senderismo .header-senderismo h1 {
     color: rgba(10, 15, 50, 0.8196078431);
-    font-size: 5rem;
+    font-size: 4rem;
     display: flex;
     justify-content: start;
     position: sticky;
@@ -1095,6 +1102,20 @@ footer h3 {
   }
   .body-senderismo .header-senderismo nav {
     grid-column: span 2;
+    width: 100%;
+    display: grid;
+  }
+  .body-senderismo .header-senderismo nav ul.menu {
+    padding: 0;
+    align-items: center;
+    justify-self: center;
+    gap: 0.5rem;
+  }
+  .body-senderismo .header-senderismo nav ul.menu li {
+    margin-left: 0;
+  }
+  .body-senderismo .header-senderismo nav ul.menu li a {
+    font-size: medium;
   }
   .body-senderismo .main-send {
     display: grid;
@@ -1102,6 +1123,7 @@ footer h3 {
     row-gap: 2rem;
     margin-bottom: 2rem;
     justify-content: center;
+    grid-template-columns: 100%;
   }
   .body-senderismo .main-send .presentacion-senderismo {
     display: grid;
@@ -1111,6 +1133,7 @@ footer h3 {
     margin-block: 2rem;
     border-top: solid 1px;
     row-gap: 2rem;
+    width: 100%;
   }
   .body-senderismo .main-send .presentacion-senderismo h2 {
     color: rgb(49, 33, 14);
@@ -1123,7 +1146,7 @@ footer h3 {
     font-size: 1.5rem;
     font-family: serif;
   }
-  .body-senderismo .main-send .que-es {
+  .body-senderismo .main-send .presentacion-senderismo .que-es {
     justify-self: center;
     border: solid;
     background-color: rgba(255, 228, 196, 0.849);
@@ -1131,15 +1154,16 @@ footer h3 {
     padding: 1.5rem;
     border-radius: 10px;
   }
-  .body-senderismo .main-send .donde-se-hace {
+  .body-senderismo .main-send .presentacion-senderismo .donde-se-hace {
     background-color: rgba(255, 228, 196, 0.776);
     border: solid black;
     margin: 0;
     height: fit-content;
-    padding: 1.5rem;
+    padding: 0;
     border-radius: 10px;
+    width: 100%;
   }
-  .body-senderismo .main-send .video-send {
+  .body-senderismo .main-send .presentacion-senderismo .video-send {
     width: 25rem;
     position: relative;
     border-radius: 15px;
@@ -1154,6 +1178,7 @@ footer h3 {
     margin: 0;
     -webkit-background-clip: unset;
     border-radius: 15px;
+    width: 90%;
     justify-self: center;
     padding-inline: 0;
   }
@@ -1193,7 +1218,7 @@ footer h3 {
     background-color: rgba(250, 235, 215, 0.88);
     border-radius: 20px;
     padding: 2rem;
-    width: 80vh;
+    width: 80%;
     border: solid 1px;
     justify-self: center;
   }
@@ -1215,6 +1240,7 @@ footer h3 {
   .body-senderismo .main-send .donde-realizarlo {
     background-color: rgba(42, 121, 11, 0.295);
     position: relative;
+    width: 100%;
   }
   .body-senderismo .main-send .donde-realizarlo article {
     background-color: antiquewhite;
@@ -1222,6 +1248,7 @@ footer h3 {
     margin-inline: 1rem;
     border-radius: 15px;
     border: solid 1px;
+    width: 90%;
   }
   .body-senderismo .main-send .donde-realizarlo article h3 {
     display: flex;
@@ -1345,8 +1372,7 @@ footer h3 {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100vh;
-    width: 100vh;
+    grid-auto-columns: 100%;
     position: relative;
   }
   .body-indispensables .header-indispensables {
@@ -1356,7 +1382,7 @@ footer h3 {
     align-items: center;
     height: fit-content;
     width: 100%;
-    padding-bottom: 0;
+    padding-bottom: 2rem;
     margin-bottom: 1rem;
   }
   .body-indispensables .header-indispensables img {
@@ -1366,21 +1392,65 @@ footer h3 {
   }
   .body-indispensables .header-indispensables h1 {
     color: rgba(10, 15, 50, 0.8196078431);
-    font-size: 5rem;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0px;
+    background-color: antiquewhite;
+    border-radius: 100px;
   }
   .body-indispensables .header-indispensables nav {
-    display: grid;
     grid-column: span 2;
+    width: 100%;
+    display: grid;
   }
   .body-indispensables .header-indispensables nav ul.menu {
-    justify-content: center;
-    position: relative;
+    padding: 0;
+    align-items: center;
+    justify-self: center;
+    gap: 0.5rem;
+  }
+  .body-indispensables .header-indispensables nav ul.menu li {
+    margin-left: 0;
+  }
+  .body-indispensables .header-indispensables nav ul.menu li a {
+    font-size: medium;
+  }
+  .body-indispensables .main-indispensables {
+    background-color: rgba(10, 10, 10, 0.5);
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+  }
+  .body-indispensables .main-indispensables .encabezado-indispensables {
+    background-color: rgba(222, 184, 135, 0.7);
+    font-size: 2.5rem;
+    padding: 1rem;
     border-radius: 10px;
-    padding: 0px;
+    width: 90%;
+    justify-self: center;
+  }
+  .body-indispensables .main-indispensables ol {
+    display: grid;
+    row-gap: 1rem;
+    margin-left: 0;
+  }
+  .body-indispensables .main-indispensables ol li {
+    color: antiquewhite;
+    font-size: 2rem;
+    justify-self: baseline;
+  }
+  .body-indispensables .main-indispensables section {
+    border: solid black;
+    border-radius: 2rem;
+    display: grid;
+    padding: 1rem 2rem;
+  }
+  .body-indispensables .main-indispensables p {
+    font-size: 1.5rem;
+    color: aliceblue;
+    background-size: auto;
   }
 }
 @media (min-width: 501px) and (max-width: 800px) {
@@ -1389,8 +1459,8 @@ footer h3 {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
-    width: 100vh;
+    min-height: 100%;
+    width: 100%;
     position: relative;
   }
   .body-indispensables .header-indispensables {
@@ -1420,7 +1490,7 @@ footer h3 {
   }
   .body-indispensables .header-indispensables h1 {
     color: rgba(10, 15, 50, 0.8196078431);
-    font-size: 5rem;
+    font-size: 4rem;
     display: flex;
     justify-content: center;
     position: sticky;
