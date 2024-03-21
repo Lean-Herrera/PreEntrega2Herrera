@@ -13,10 +13,20 @@
     display: grid;
     row-gap: 2rem;
     justify-content: center;
+    grid-template-columns: 1fr;
 
     .header-indispensables {
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 15rem;
 
-        display: grid;
+        justify-content: space-between;
+        align-items: center;
+
+        .header-desktop{
+         display: grid;
         grid-template-columns: 30% 70%;
         align-items: center;
         height: fit-content;
@@ -25,11 +35,7 @@
         background-color: rgba(250, 235, 215, 0.878);
         border-radius: 30px;
         background-size: cover;
-
-
-
-
-
+   
 
         img {
             width: 15rem;
@@ -50,37 +56,7 @@
 
         }
 
-        // nav {
-        //     ul.menu {
-
-
-        //         right: 0px;
-        //         position: relative;
-        //         list-style-type: none;
-        //         display: flex;
-        //         float: inline-end;
-        //         padding: 0px 25px;
-        //         background-color: rgb(0, 0, 0, 0.7);
-        //         border-radius: 5px;
-
-
-        //         li {
-
-        //             display: flex;
-        //             margin-left: 1rem;
-        //         }
-
-
-        //     }
-
-        //     a {
-        //         text-decoration: underline;
-        //         color: #f48a20d1;
-        //         font-size: 1.2rem;
-        //     }
-
-
-        // }
+        
 
         nav {grid-column: span 2;
             ul.menu {
@@ -160,6 +136,10 @@
 
         }
 
+        }
+
+        
+
     }
 
     .main-indispensables {
@@ -224,9 +204,14 @@
         grid-auto-columns: 100%;
         position: relative;
 
-        .header-desktop{
+.header-indispensables{
+
+     .header-desktop{
             display: none;
         }
+        
+}
+       
 
     @import "../components/nav";
 
@@ -295,20 +280,24 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        min-height: 100%;
+        height: 100%;
         width: 100%;
         position: relative;
 
 
-
-        .header-desktop{
+.header-indispensables{
+     .header-desktop{
             display: none;
         }
+}
+       
 
     @import "../components/nav";
     }
 
-
+.barra-responsive{
+width: 100%;
+}
 
 
 }

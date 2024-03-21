@@ -179,11 +179,16 @@
             display: none;
         }
 
+        .header-camping {
+            grid-template-columns: 1fr;
+        }
+
         @import "../components/nav";
 
         .main-camping {
-            display: grid;
-            width: 100vh;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
             row-gap: 2rem;
             margin-bottom: 2rem;
 
@@ -208,7 +213,7 @@
                 row-gap: 1rem;
                 background-color: rgba(255, 228, 196, 0.849);
                 height: fit-content;
-                width: 90vh;
+                width: 90%;
                 padding: 1.5rem;
                 border-radius: 10px;
 
@@ -277,8 +282,8 @@
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
-        min-height: 100vh;
-        width: 100vh;
+        min-height: 100%;
+        width: 100%;
         position: relative;
 
 
@@ -294,6 +299,9 @@
 
         }
 
+        .header-camping {
+            grid-template-columns: 1fr;
+        }
 
         .header-desktop {
             display: none;
@@ -302,7 +310,8 @@
         @import "../components/nav";
 
         .main-camping {
-            display: grid;
+            display: flex;
+            flex-direction: column;
             width: 100%;
             row-gap: 2rem;
             margin-bottom: 2rem;
@@ -311,7 +320,7 @@
                 display: flex;
                 align-self: center;
                 justify-self: center;
-                width: 25rem;
+                width: 75%;
                 position: relative;
                 border-radius: 15px;
             }
@@ -340,9 +349,13 @@
 
             }
 
-            article {
+            .articulos-camping{
+                column-gap: 1rem;
+                justify-content: center;
+                article {
                 display: grid;
                 row-gap: 1rem;
+                
 
                 h2 {
                     justify-self: center;
@@ -352,13 +365,11 @@
 
                 }
 
-            }
-
-            .video-que-necesito {
+               .video-que-necesito {
                 display: flex;
                 align-self: center;
                 justify-self: center;
-                width: 25rem;
+                width: 100%;
                 position: relative;
                 border-radius: 15px;
             }
@@ -367,10 +378,17 @@
                 display: flex;
                 align-self: center;
                 justify-self: center;
-                width: 25rem;
+                width: 100%;
                 position: relative;
                 border-radius: 15px;
+            } 
+
             }
+
+            }
+
+            
+            
 
         }
 

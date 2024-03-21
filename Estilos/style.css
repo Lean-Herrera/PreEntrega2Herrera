@@ -1717,11 +1717,21 @@ footer h3 {
   display: grid;
   row-gap: 2rem;
   justify-content: center;
+  grid-template-columns: 1fr;
 }
 .body-indispensables .bg-dark {
   display: none;
 }
 .body-indispensables .header-indispensables {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 15rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.body-indispensables .header-indispensables .header-desktop {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
@@ -1732,14 +1742,14 @@ footer h3 {
   border-radius: 30px;
   background-size: cover;
 }
-.body-indispensables .header-indispensables img {
+.body-indispensables .header-indispensables .header-desktop img {
   width: 15rem;
   display: grid;
   float: left;
   position: relative;
   z-index: 1;
 }
-.body-indispensables .header-indispensables h1 {
+.body-indispensables .header-indispensables .header-desktop h1 {
   color: rgba(10, 15, 50, 0.8196078431);
   font-size: 4rem;
   display: flex;
@@ -1747,10 +1757,10 @@ footer h3 {
   position: sticky;
   top: 0px;
 }
-.body-indispensables .header-indispensables nav {
+.body-indispensables .header-indispensables .header-desktop nav {
   grid-column: span 2;
 }
-.body-indispensables .header-indispensables nav ul.menu {
+.body-indispensables .header-indispensables .header-desktop nav ul.menu {
   right: 0px;
   position: relative;
   list-style-type: none;
@@ -1761,22 +1771,22 @@ footer h3 {
   border-radius: 5px;
   gap: 1rem;
 }
-.body-indispensables .header-indispensables nav ul.menu li {
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li {
   display: flex;
   position: relative;
 }
-.body-indispensables .header-indispensables nav ul.menu li a {
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li a {
   text-decoration: none;
   color: rgba(244, 138, 32, 0.8196078431);
   font-size: 1.2rem;
   position: relative;
   text-transform: uppercase;
 }
-.body-indispensables .header-indispensables nav ul.menu li a :hover {
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li a :hover {
   font-size: 1.7rem;
   transition: 0.2s;
 }
-.body-indispensables .header-indispensables nav ul.menu li :after {
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li :after {
   content: "";
   width: 0;
   height: 4px;
@@ -1788,11 +1798,11 @@ footer h3 {
   transition: all 0.5s;
   will-change: width;
 }
-.body-indispensables .header-indispensables nav ul.menu li :hover:after {
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li :hover:after {
   width: 100%;
   right: 0;
 }
-.body-indispensables .header-indispensables nav a {
+.body-indispensables .header-indispensables .header-desktop nav a {
   text-decoration: underline;
   color: rgba(244, 138, 32, 0.8196078431);
   font-size: 1.2rem;
@@ -1839,7 +1849,7 @@ footer h3 {
     grid-auto-columns: 100%;
     position: relative;
   }
-  .body-indispensables .header-desktop {
+  .body-indispensables .header-indispensables .header-desktop {
     display: none;
   }
   .body-indispensables nav ul.menu {
@@ -2003,11 +2013,11 @@ footer h3 {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100%;
+    height: 100%;
     width: 100%;
     position: relative;
   }
-  .body-indispensables .header-desktop {
+  .body-indispensables .header-indispensables .header-desktop {
     display: none;
   }
   .body-indispensables nav ul.menu {
@@ -2126,6 +2136,11 @@ footer h3 {
   }
   .body-indispensables .bg-dark .container-fluid .navbar-collapse {
     grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .barra-responsive {
+    width: 100%;
   }
 }
 /* CAMPING */
@@ -2381,6 +2396,9 @@ footer h3 {
   .body-camping .header-desktop {
     display: none;
   }
+  .body-camping .header-camping {
+    grid-template-columns: 1fr;
+  }
   .body-camping nav ul.menu {
     right: 0px;
     position: relative;
@@ -2501,8 +2519,9 @@ footer h3 {
 }
 @media (max-width: 500px) {
   .body-camping .main-camping {
-    display: grid;
-    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     row-gap: 2rem;
     margin-bottom: 2rem;
   }
@@ -2525,7 +2544,7 @@ footer h3 {
     row-gap: 1rem;
     background-color: rgba(255, 228, 196, 0.849);
     height: fit-content;
-    width: 90vh;
+    width: 90%;
     padding: 1.5rem;
     border-radius: 10px;
   }
@@ -2571,8 +2590,8 @@ footer h3 {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
-    width: 100vh;
+    min-height: 100%;
+    width: 100%;
     position: relative;
   }
   .body-camping .capa {
@@ -2580,6 +2599,9 @@ footer h3 {
   }
   .body-camping .video-fondo-camping {
     display: none;
+  }
+  .body-camping .header-camping {
+    grid-template-columns: 1fr;
   }
   .body-camping .header-desktop {
     display: none;
@@ -2704,7 +2726,8 @@ footer h3 {
 }
 @media (min-width: 501px) and (max-width: 800px) {
   .body-camping .main-camping {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100%;
     row-gap: 2rem;
     margin-bottom: 2rem;
@@ -2713,7 +2736,7 @@ footer h3 {
     display: flex;
     align-self: center;
     justify-self: center;
-    width: 25rem;
+    width: 75%;
     position: relative;
     border-radius: 15px;
   }
@@ -2735,28 +2758,32 @@ footer h3 {
     justify-self: center;
     align-items: center;
   }
-  .body-camping .main-camping article {
+  .body-camping .main-camping .articulos-camping {
+    column-gap: 1rem;
+    justify-content: center;
+  }
+  .body-camping .main-camping .articulos-camping article {
     display: grid;
     row-gap: 1rem;
   }
-  .body-camping .main-camping article h2 {
+  .body-camping .main-camping .articulos-camping article h2 {
     justify-self: center;
     background-color: rgba(255, 228, 196, 0.849);
     border-radius: 10px;
   }
-  .body-camping .main-camping .video-que-necesito {
+  .body-camping .main-camping .articulos-camping article .video-que-necesito {
     display: flex;
     align-self: center;
     justify-self: center;
-    width: 25rem;
+    width: 100%;
     position: relative;
     border-radius: 15px;
   }
-  .body-camping .main-camping .video-recomendaciones {
+  .body-camping .main-camping .articulos-camping article .video-recomendaciones {
     display: flex;
     align-self: center;
     justify-self: center;
-    width: 25rem;
+    width: 100%;
     position: relative;
     border-radius: 15px;
   }
