@@ -1,0 +1,167 @@
+nav {
+
+
+    ul.menu {
+
+
+        right: 0px;
+        position: relative;
+        list-style-type: none;
+        float: inline-end;
+        padding: 0px 25px;
+        background-color: rgb(0, 0, 0, 0.7);
+        border-radius: 5px;
+        gap: 1rem;
+
+
+
+        li {
+            display: inline-block;
+            position: relative;
+            margin-right:8px ;
+
+
+            a {
+                text-decoration: none;
+                color: #f48a20d1;
+                font-size: 1.2rem;
+                position: relative;
+                text-transform: uppercase;
+
+            }
+
+            :after {
+                content: "";
+                width: 0;
+                height: 2px;
+                background-color: #f48a20d1;
+                font-size: 1.5rem;
+                position: absolute;
+                bottom: 0;
+                right: 50%;
+                transition: all .5s;
+                will-change: width;
+
+
+            }
+
+
+            :hover:after {
+
+                width: 100%;
+                right: 0;
+
+            }
+        }
+
+
+    }
+
+
+
+}
+
+
+@include mq-mobile {
+    .bg-dark {
+        background-color: rgba(117, 119, 3, 0.596) !important;
+        display: grid;
+
+
+        .container-fluid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            a {
+                text-transform: uppercase;
+
+                img {
+                    display: grid;
+                    width: 100px;
+                    position: relative;
+                }
+            }
+
+            .titulo {
+                display: grid;
+                justify-content: center;
+
+                h1 {
+                    color: #0a0f32d1;
+                    font-size: 2rem;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    justify-self: center;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+            }
+
+            .navbar-toggler {
+
+                width: 50%;
+                justify-self: center;
+            }
+
+            .navbar-collapse {
+                grid-column: span 3;
+            }
+        }
+
+    }
+}
+
+@include mq-tablet {
+    .bg-dark {
+        background-color: rgba(117, 119, 3, 0.596) !important;
+        display: grid;
+        grid-template-columns: 1fr;
+        
+
+
+        .container-fluid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            a {
+                text-transform: uppercase;
+
+                img {
+                    display: grid;
+                    width: 100px;
+                    position: relative;
+                }
+            }
+
+            .titulo {
+                display: grid;
+                justify-content: center;
+
+                h1 {
+                    color: #0a0f32d1;
+                    font-size: 2rem;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                    justify-self: center;
+                    font-family: 'Times New Roman', Times, serif;
+                }
+            }
+
+            .navbar-toggler {
+
+                width: 50%;
+                justify-self: center;
+            }
+
+            .navbar-collapse {
+                grid-column: span 3;
+            }
+        }
+
+    }
+}
