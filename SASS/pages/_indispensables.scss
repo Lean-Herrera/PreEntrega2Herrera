@@ -1,9 +1,10 @@
 .body-indispensables {
 
-    .bg-dark{
+    .bg-dark {
         display: none;
 
     }
+
     height: 20rem;
     background: url("../imagenes-p/indispensables/maleta.webp");
     background-repeat: no-repeat;
@@ -25,120 +26,122 @@
         justify-content: space-between;
         align-items: center;
 
-        .header-desktop{
-         display: grid;
-        grid-template-columns: 30% 70%;
-        align-items: center;
-        height: fit-content;
-        padding-bottom: 2rem;
-        margin-bottom: 1rem;
-        background-color: rgba(250, 235, 215, 0.878);
-        border-radius: 30px;
-        background-size: cover;
-   
-
-        img {
-            width: 15rem;
+        .header-desktop {
             display: grid;
-            float: left;
-            position: relative;
-            z-index: 1;
-        }
-
-        h1 {
-            color: #0a0f32d1;
-            font-size: 4rem;
-            display: flex;
-            justify-content: start;
-            position: sticky;
-            top: 0px;
+            grid-template-columns: 30% 70%;
+            align-items: center;
+            height: fit-content;
+            padding-bottom: 2rem;
+            margin-bottom: 1rem;
+            background-color: rgba(250, 235, 215, 0.878);
+            border-radius: 30px;
+            background-size: cover;
 
 
-        }
-
-        
-
-        nav {grid-column: span 2;
-            ul.menu {
-
-                
-                right: 0px;
+            img {
+                width: 15rem;
+                display: grid;
+                float: left;
                 position: relative;
-                list-style-type: none;
+                z-index: 1;
+            }
+
+            h1 {
+                color: #0a0f32d1;
+                font-size: 4rem;
                 display: flex;
-                float: inline-end;
-                padding: 0px 25px;
-                background-color: rgb(0, 0, 0, 0.7);
-                border-radius: 5px;
-                gap: 1rem;
+                justify-content: start;
+                position: sticky;
+                top: 0px;
+
+
+            }
 
 
 
+            nav {
+                grid-column: span 2;
+
+                ul.menu {
 
 
-                li {
-
-                    display: flex;
+                    right: 0px;
                     position: relative;
-                    
-        
-                    a {
-                        text-decoration: none;
-                        color: #f48a20d1;
-                        font-size: 1.2rem;
+                    list-style-type: none;
+                    display: flex;
+                    float: inline-end;
+                    padding: 0px 25px;
+                    background-color: rgb(0, 0, 0, 0.7);
+                    border-radius: 5px;
+                    gap: 1rem;
+
+
+
+
+
+                    li {
+
+                        display: flex;
                         position: relative;
-                        text-transform: uppercase;
-        
-                        :hover{
-                        
-                            font-size: 1.7rem;
-                            transition: .2s;
-        
+
+
+                        a {
+                            text-decoration: none;
+                            color: #f48a20d1;
+                            font-size: 1.2rem;
+                            position: relative;
+                            text-transform: uppercase;
+
+                            :hover {
+
+                                font-size: 1.7rem;
+                                transition: .2s;
+
+                            }
+
+
+
                         }
-                        
-        
-        
+
+                        :after {
+                            content: "";
+                            width: 0;
+                            height: 4px;
+                            background-color: #f48a20d1;
+                            font-size: 1.5rem;
+                            position: absolute;
+                            bottom: 0;
+                            right: 50%;
+                            transition: all .5s;
+                            will-change: width;
+
+
+                        }
+
+
+                        :hover:after {
+
+                            width: 100%;
+                            right: 0;
+
+                        }
                     }
-        
-                    :after {
-                        content: "";
-                        width: 0;
-                        height: 4px;
-                        background-color: #f48a20d1;
-                        font-size: 1.5rem;
-                        position: absolute;
-                        bottom: 0;
-                        right: 50%;
-                        transition:all .5s;
-                        will-change: width;
-                        
-        
-                    }
-        
-        
-                    :hover:after {
-        
-                        width: 100%;
-                        right: 0;
-        
-                    }
+
+
+                }
+
+                a {
+                    text-decoration: underline;
+                    color: #f48a20d1;
+                    font-size: 1.2rem;
                 }
 
 
             }
 
-            a {
-                text-decoration: underline;
-                color: #f48a20d1;
-                font-size: 1.2rem;
-            }
-
-
         }
 
-        }
 
-        
 
     }
 
@@ -204,16 +207,31 @@
         grid-auto-columns: 100%;
         position: relative;
 
-.header-indispensables{
+        .header-indispensables {
 
-     .header-desktop{
-            display: none;
+            .header-desktop {
+                display: none;
+            }
+
+            .bg-dark {
+
+
+                .container-fluid {
+                    padding: 0;
+
+                    .navbar-toggler {
+
+                        width: 80%;
+                        justify-self: center;
+                    }
+                }
+
+            }
+
         }
-        
-}
-       
 
-    @import "../components/nav";
+
+        @import "../components/nav";
 
 
         .main-indispensables {
@@ -221,50 +239,50 @@
             display: grid;
             gap: 2rem;
             width: 100%;
-    
+
             .encabezado-indispensables {
-    
+
                 background-color: rgb(222, 184, 135, 0.7);
                 font-size: 2.5rem;
                 padding: 1rem;
                 border-radius: 10px;
                 width: 90%;
                 justify-self: center;
-    
-    
+
+
             }
-    
+
             ol {
                 display: grid;
                 row-gap: 1rem;
                 margin-left: 0;
-    
+
                 li {
-    
+
                     color: antiquewhite;
                     font-size: 2rem;
                     justify-self: baseline;
                 }
-    
+
             }
-    
+
             section {
                 border: solid black;
                 border-radius: 2rem;
                 display: grid;
                 padding: 1rem 2rem;
-    
+
             }
-    
-    
-    
+
+
+
             p {
                 font-size: 1.5rem;
                 color: aliceblue;
                 background-size: auto;
-    
+
             }
-    
+
         }
     }
 
@@ -285,19 +303,19 @@
         position: relative;
 
 
-.header-indispensables{
-     .header-desktop{
-            display: none;
+        .header-indispensables {
+            .header-desktop {
+                display: none;
+            }
         }
-}
-       
 
-    @import "../components/nav";
+
+        @import "../components/nav";
     }
 
-.barra-responsive{
-width: 100%;
-}
+    .barra-responsive {
+        width: 100%;
+    }
 
 
 }

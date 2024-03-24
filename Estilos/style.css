@@ -820,6 +820,10 @@ footer h3 {
     align-self: center;
     color: peru;
   }
+  footer .redes a {
+    width: 50px;
+    height: 50px;
+  }
 }
 /*-----------SENDERISMO-----------------*/
 .body-senderismo {
@@ -1851,6 +1855,13 @@ footer h3 {
   }
   .body-indispensables .header-indispensables .header-desktop {
     display: none;
+  }
+  .body-indispensables .header-indispensables .bg-dark .container-fluid {
+    padding: 0;
+  }
+  .body-indispensables .header-indispensables .bg-dark .container-fluid .navbar-toggler {
+    width: 80%;
+    justify-self: center;
   }
   .body-indispensables nav ul.menu {
     right: 0px;
