@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -2815,6 +2816,308 @@ footer h3 {
     width: 100%;
     position: relative;
     border-radius: 15px;
+  }
+}
+/*FORMULARIO */
+.body-formulario {
+  background: url("../../imagenes-p/index/pexels-janiere-fernandez-2405101.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header-formulario {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-formulario .header-desktop {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  background-color: rgba(250, 235, 215, 0.878);
+  border-radius: 30px;
+  background-size: cover;
+}
+.header-formulario .header-desktop img {
+  width: 15rem;
+  display: grid;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+.header-formulario .header-desktop h1 {
+  color: rgba(10, 15, 50, 0.8196078431);
+  font-size: 4rem;
+  display: flex;
+  justify-content: start;
+  position: sticky;
+  top: 0px;
+}
+.header-formulario .header-desktop nav {
+  grid-column: span 2;
+}
+.header-formulario .header-desktop nav ul.menu {
+  right: 0px;
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  float: inline-end;
+  padding: 0px 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  gap: 1rem;
+}
+.header-formulario .header-desktop nav ul.menu li {
+  display: flex;
+  position: relative;
+}
+.header-formulario .header-desktop nav ul.menu li a {
+  text-decoration: none;
+  color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.header-formulario .header-desktop nav ul.menu li a :hover {
+  font-size: 1.7rem;
+  transition: 0.2s;
+}
+.header-formulario .header-desktop nav ul.menu li :after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+.header-formulario .header-desktop nav ul.menu li :hover:after {
+  width: 100%;
+  right: 0;
+}
+.header-formulario .header-desktop nav a {
+  text-decoration: underline;
+  color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.2rem;
+}
+.header-formulario .bg-dark {
+  display: none;
+}
+
+main h2 {
+  background-color: rgba(250, 235, 215, 0.771);
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+main .formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+main .formulario form {
+  background-color: rgba(240, 248, 255, 0.805);
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+main .formulario ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main .formulario form li + li {
+  margin-top: 1em;
+}
+main .formulario label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+main .formulario input,
+main .formulario textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+main .formulario input:focus,
+main .formulario textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+main .formulario textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+main .formulario .button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+main .formulario button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: 0.5em;
+}
+
+@media (max-width: 500px) {
+  .header-formulario {
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+  .header-formulario .header-desktop {
+    display: none;
+  }
+  .header-formulario nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .header-formulario nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .header-formulario nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .header-formulario nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .header-formulario nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .header-formulario .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .header-formulario .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .header-formulario .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .header-formulario .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .header-formulario .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .header-formulario .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .header-formulario .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .header-formulario .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .header-formulario .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) and (min-width: 501px) and (max-width: 800px) {
+  .header-formulario .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .header-formulario .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .header-formulario .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .header-formulario .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .header-formulario .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .header-formulario .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .header-formulario .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .header-formulario .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .header-formulario .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) {
+  main {
+    display: grid;
+    justify-content: center;
+  }
+  main .formulario {
+    width: 90%;
+    justify-self: center;
+  }
+  main .formulario form {
+    width: 100%;
   }
 }
 

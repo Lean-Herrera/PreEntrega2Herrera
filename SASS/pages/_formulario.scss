@@ -1,0 +1,252 @@
+.body-formulario{
+    background: url("../../imagenes-p/index/pexels-janiere-fernandez-2405101.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.header-formulario {
+
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+    justify-content: space-between;
+    align-items: center;
+
+    .header-desktop {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        align-items: center;
+        height: fit-content;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+        background-color: rgba(250, 235, 215, 0.878);
+        border-radius: 30px;
+        background-size: cover;
+
+
+        img {
+            width: 15rem;
+            display: grid;
+            float: left;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            color: #0a0f32d1;
+            font-size: 4rem;
+            display: flex;
+            justify-content: start;
+            position: sticky;
+            top: 0px;
+
+
+        }
+
+
+
+        nav {
+            grid-column: span 2;
+
+            ul.menu {
+
+
+                right: 0px;
+                position: relative;
+                list-style-type: none;
+                display: flex;
+                float: inline-end;
+                padding: 0px 25px;
+                background-color: rgb(0, 0, 0, 0.7);
+                border-radius: 5px;
+                gap: 1rem;
+
+
+
+
+
+                li {
+
+                    display: flex;
+                    position: relative;
+
+
+                    a {
+                        text-decoration: none;
+                        color: #f48a20d1;
+                        font-size: 1.2rem;
+                        position: relative;
+                        text-transform: uppercase;
+
+                        :hover {
+
+                            font-size: 1.7rem;
+                            transition: .2s;
+
+                        }
+
+
+
+                    }
+
+                    :after {
+                        content: "";
+                        width: 0;
+                        height: 4px;
+                        background-color: #f48a20d1;
+                        font-size: 1.5rem;
+                        position: absolute;
+                        bottom: 0;
+                        right: 50%;
+                        transition: all .5s;
+                        will-change: width;
+
+
+                    }
+
+
+                    :hover:after {
+
+                        width: 100%;
+                        right: 0;
+
+                    }
+                }
+
+
+            }
+
+            a {
+                text-decoration: underline;
+                color: #f48a20d1;
+                font-size: 1.2rem;
+            }
+
+
+        }
+
+    }
+
+  .bg-dark{
+    display: none;
+  }
+
+}
+
+main{
+h2{
+    background-color: rgba(250, 235, 215, 0.771);
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}   
+
+  .formulario{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+   form {
+    background-color: rgba(240, 248, 255, 0.805);
+    margin: 0 auto;
+    width: 400px;
+    /* Esquema del formulario */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Tamaño y alineación uniforme */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+       Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+    font: 1em sans-serif;
+  
+    /* Tamaño uniforme del campo de texto */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Hacer coincidir los bordes del campo del formulario */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Destacado adicional para elementos que tienen el cursor */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Alinear los campos de texto multilínea con sus etiquetas */
+    vertical-align: top;
+  
+    /* Proporcionar espacio para escribir texto */
+    height: 5em;
+  }
+  
+  .button {
+    /* Alinear los botones con los campos de texto */
+    padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+  }
+  
+  button {
+    /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+       entre las etiquetas y sus campos de texto */
+    margin-left: 0.5em;
+  }
+   
+}
+  
+}
+
+
+@include mq-mobile{
+
+    .header-formulario {
+        grid-template-columns: 1fr;
+        margin-bottom: 2rem;
+
+        .header-desktop {
+        display: none;
+
+    }
+    
+    @import "../components/nav";  
+    }
+
+    main{
+        display: grid;
+        justify-content: center;
+        
+        .formulario{
+            width: 90%;
+            justify-self: center;
+
+            form{
+                width: 100%;
+            }
+        }
+    }
+  
+    
+}
