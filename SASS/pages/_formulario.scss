@@ -4,8 +4,8 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-.header-formulario {
+
+   .header-formulario {
 
     width: 100%;
     background-size: cover;
@@ -137,7 +137,7 @@
 
 }
 
-main{
+.main-formulario{
 h2{
     background-color: rgba(250, 235, 215, 0.771);
     border-radius: 10px;
@@ -217,7 +217,9 @@ h2{
    
 }
   
+} 
 }
+
 
 
 @include mq-mobile{

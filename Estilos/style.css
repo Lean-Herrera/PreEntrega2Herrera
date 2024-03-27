@@ -19,6 +19,7 @@
 .body-principal {
   min-height: 100vh;
   position: relative;
+  background-color: gray;
 }
 .body-principal .video-index {
   object-fit: cover;
@@ -2826,8 +2827,7 @@ footer h3 {
   background-position: center;
   background-attachment: fixed;
 }
-
-.header-formulario {
+.body-formulario .header-formulario {
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -2835,7 +2835,7 @@ footer h3 {
   justify-content: space-between;
   align-items: center;
 }
-.header-formulario .header-desktop {
+.body-formulario .header-formulario .header-desktop {
   display: grid;
   grid-template-columns: 30% 70%;
   align-items: center;
@@ -2846,14 +2846,14 @@ footer h3 {
   border-radius: 30px;
   background-size: cover;
 }
-.header-formulario .header-desktop img {
+.body-formulario .header-formulario .header-desktop img {
   width: 15rem;
   display: grid;
   float: left;
   position: relative;
   z-index: 1;
 }
-.header-formulario .header-desktop h1 {
+.body-formulario .header-formulario .header-desktop h1 {
   color: rgba(10, 15, 50, 0.8196078431);
   font-size: 4rem;
   display: flex;
@@ -2861,10 +2861,10 @@ footer h3 {
   position: sticky;
   top: 0px;
 }
-.header-formulario .header-desktop nav {
+.body-formulario .header-formulario .header-desktop nav {
   grid-column: span 2;
 }
-.header-formulario .header-desktop nav ul.menu {
+.body-formulario .header-formulario .header-desktop nav ul.menu {
   right: 0px;
   position: relative;
   list-style-type: none;
@@ -2875,22 +2875,22 @@ footer h3 {
   border-radius: 5px;
   gap: 1rem;
 }
-.header-formulario .header-desktop nav ul.menu li {
+.body-formulario .header-formulario .header-desktop nav ul.menu li {
   display: flex;
   position: relative;
 }
-.header-formulario .header-desktop nav ul.menu li a {
+.body-formulario .header-formulario .header-desktop nav ul.menu li a {
   text-decoration: none;
   color: rgba(244, 138, 32, 0.8196078431);
   font-size: 1.2rem;
   position: relative;
   text-transform: uppercase;
 }
-.header-formulario .header-desktop nav ul.menu li a :hover {
+.body-formulario .header-formulario .header-desktop nav ul.menu li a :hover {
   font-size: 1.7rem;
   transition: 0.2s;
 }
-.header-formulario .header-desktop nav ul.menu li :after {
+.body-formulario .header-formulario .header-desktop nav ul.menu li :after {
   content: "";
   width: 0;
   height: 4px;
@@ -2902,31 +2902,30 @@ footer h3 {
   transition: all 0.5s;
   will-change: width;
 }
-.header-formulario .header-desktop nav ul.menu li :hover:after {
+.body-formulario .header-formulario .header-desktop nav ul.menu li :hover:after {
   width: 100%;
   right: 0;
 }
-.header-formulario .header-desktop nav a {
+.body-formulario .header-formulario .header-desktop nav a {
   text-decoration: underline;
   color: rgba(244, 138, 32, 0.8196078431);
   font-size: 1.2rem;
 }
-.header-formulario .bg-dark {
+.body-formulario .header-formulario .bg-dark {
   display: none;
 }
-
-main h2 {
+.body-formulario .main-formulario h2 {
   background-color: rgba(250, 235, 215, 0.771);
   border-radius: 10px;
   font-family: "Times New Roman", Times, serif;
   font-size: 2rem;
 }
-main .formulario {
+.body-formulario .main-formulario .formulario {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
 }
-main .formulario form {
+.body-formulario .main-formulario .formulario form {
   background-color: rgba(240, 248, 255, 0.805);
   margin: 0 auto;
   width: 400px;
@@ -2935,22 +2934,22 @@ main .formulario form {
   border: 1px solid #ccc;
   border-radius: 1em;
 }
-main .formulario ul {
+.body-formulario .main-formulario .formulario ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-main .formulario form li + li {
+.body-formulario .main-formulario .formulario form li + li {
   margin-top: 1em;
 }
-main .formulario label {
+.body-formulario .main-formulario .formulario label {
   /* Tamaño y alineación uniforme */
   display: inline-block;
   width: 90px;
   text-align: right;
 }
-main .formulario input,
-main .formulario textarea {
+.body-formulario .main-formulario .formulario input,
+.body-formulario .main-formulario .formulario textarea {
   /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
      Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
   font: 1em sans-serif;
@@ -2960,22 +2959,22 @@ main .formulario textarea {
   /* Hacer coincidir los bordes del campo del formulario */
   border: 1px solid #999;
 }
-main .formulario input:focus,
-main .formulario textarea:focus {
+.body-formulario .main-formulario .formulario input:focus,
+.body-formulario .main-formulario .formulario textarea:focus {
   /* Destacado adicional para elementos que tienen el cursor */
   border-color: #000;
 }
-main .formulario textarea {
+.body-formulario .main-formulario .formulario textarea {
   /* Alinear los campos de texto multilínea con sus etiquetas */
   vertical-align: top;
   /* Proporcionar espacio para escribir texto */
   height: 5em;
 }
-main .formulario .button {
+.body-formulario .main-formulario .formulario .button {
   /* Alinear los botones con los campos de texto */
   padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
 }
-main .formulario button {
+.body-formulario .main-formulario .formulario button {
   /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
      entre las etiquetas y sus campos de texto */
   margin-left: 0.5em;
