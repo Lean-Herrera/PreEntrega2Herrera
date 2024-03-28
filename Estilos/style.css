@@ -26,7 +26,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   z-index: -1;
 }
@@ -2981,14 +2981,14 @@ footer h3 {
 }
 
 @media (max-width: 500px) {
-  .header-formulario {
+  .body-formulario .header-formulario {
     grid-template-columns: 1fr;
     margin-bottom: 2rem;
   }
-  .header-formulario .header-desktop {
+  .body-formulario .header-formulario .header-desktop {
     display: none;
   }
-  .header-formulario nav ul.menu {
+  .body-formulario .header-formulario nav ul.menu {
     right: 0px;
     position: relative;
     list-style-type: none;
@@ -2998,19 +2998,19 @@ footer h3 {
     border-radius: 5px;
     gap: 1rem;
   }
-  .header-formulario nav ul.menu li {
+  .body-formulario .header-formulario nav ul.menu li {
     display: inline-block;
     position: relative;
     margin-right: 8px;
   }
-  .header-formulario nav ul.menu li a {
+  .body-formulario .header-formulario nav ul.menu li a {
     text-decoration: none;
     color: rgba(244, 138, 32, 0.8196078431);
     font-size: 1.2rem;
     position: relative;
     text-transform: uppercase;
   }
-  .header-formulario nav ul.menu li :after {
+  .body-formulario .header-formulario nav ul.menu li :after {
     content: "";
     width: 0;
     height: 2px;
@@ -3022,100 +3022,100 @@ footer h3 {
     transition: all 0.5s;
     will-change: width;
   }
-  .header-formulario nav ul.menu li :hover:after {
+  .body-formulario .header-formulario nav ul.menu li :hover:after {
     width: 100%;
     right: 0;
   }
 }
 @media (max-width: 500px) and (max-width: 500px) {
-  .header-formulario .bg-dark {
+  .body-formulario .header-formulario .bg-dark {
     background-color: rgba(117, 119, 3, 0.596) !important;
     display: grid;
   }
-  .header-formulario .bg-dark .container-fluid {
+  .body-formulario .header-formulario .bg-dark .container-fluid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .header-formulario .bg-dark .container-fluid a {
+  .body-formulario .header-formulario .bg-dark .container-fluid a {
     text-transform: uppercase;
   }
-  .header-formulario .bg-dark .container-fluid a img {
+  .body-formulario .header-formulario .bg-dark .container-fluid a img {
     display: grid;
     width: 100px;
     position: relative;
   }
-  .header-formulario .bg-dark .container-fluid .titulo {
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo {
     display: grid;
     justify-content: center;
   }
-  .header-formulario .bg-dark .container-fluid .titulo h1 {
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo h1 {
     color: rgba(10, 15, 50, 0.8196078431);
     font-size: 2rem;
     font-family: "Times New Roman", Times, serif;
   }
-  .header-formulario .bg-dark .container-fluid .titulo h2 {
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo h2 {
     font-size: 1rem;
     justify-self: center;
     font-family: "Times New Roman", Times, serif;
   }
-  .header-formulario .bg-dark .container-fluid .navbar-toggler {
+  .body-formulario .header-formulario .bg-dark .container-fluid .navbar-toggler {
     width: 50%;
     justify-self: center;
   }
-  .header-formulario .bg-dark .container-fluid .navbar-collapse {
+  .body-formulario .header-formulario .bg-dark .container-fluid .navbar-collapse {
     grid-column: span 3;
   }
 }
 @media (max-width: 500px) and (min-width: 501px) and (max-width: 800px) {
-  .header-formulario .bg-dark {
+  .body-formulario .header-formulario .bg-dark {
     background-color: rgba(117, 119, 3, 0.596) !important;
     display: grid;
     grid-template-columns: 1fr;
   }
-  .header-formulario .bg-dark .container-fluid {
+  .body-formulario .header-formulario .bg-dark .container-fluid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  .header-formulario .bg-dark .container-fluid a {
+  .body-formulario .header-formulario .bg-dark .container-fluid a {
     text-transform: uppercase;
   }
-  .header-formulario .bg-dark .container-fluid a img {
+  .body-formulario .header-formulario .bg-dark .container-fluid a img {
     display: grid;
     width: 100px;
     position: relative;
   }
-  .header-formulario .bg-dark .container-fluid .titulo {
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo {
     display: grid;
     justify-content: center;
   }
-  .header-formulario .bg-dark .container-fluid .titulo h1 {
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo h1 {
     color: rgba(10, 15, 50, 0.8196078431);
     font-size: 2rem;
     font-family: "Times New Roman", Times, serif;
   }
-  .header-formulario .bg-dark .container-fluid .titulo h2 {
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo h2 {
     font-size: 1rem;
     justify-self: center;
     font-family: "Times New Roman", Times, serif;
   }
-  .header-formulario .bg-dark .container-fluid .navbar-toggler {
+  .body-formulario .header-formulario .bg-dark .container-fluid .navbar-toggler {
     width: 50%;
     justify-self: center;
   }
-  .header-formulario .bg-dark .container-fluid .navbar-collapse {
+  .body-formulario .header-formulario .bg-dark .container-fluid .navbar-collapse {
     grid-column: span 3;
   }
 }
 @media (max-width: 500px) {
-  main {
+  .body-formulario .main-formulario {
     display: grid;
     justify-content: center;
   }
-  main .formulario {
+  .body-formulario .main-formulario .formulario {
     width: 90%;
     justify-self: center;
   }
-  main .formulario form {
+  .body-formulario .main-formulario .formulario form {
     width: 100%;
   }
 }
