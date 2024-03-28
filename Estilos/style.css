@@ -2821,7 +2821,7 @@ footer h3 {
 }
 /*FORMULARIO */
 .body-formulario {
-  background: url("/imagenes-p/index/pexels-janiere-fernandez-2405101.jpg");
+  background: url("../imagenes-p/index/pexels-janiere-fernandez-2405101.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
