@@ -1,0 +1,3110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.507);
+  mix-blend-mode: overlay;
+}
+
+/*INDEX*/
+.body-principal {
+  min-height: 100vh;
+  position: relative;
+  background-color: gray;
+}
+.body-principal .video-index {
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+.body-principal .header-index {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 15rem;
+}
+.body-principal .header-index .bg-dark {
+  display: none;
+}
+.body-principal .header-index img {
+  width: 15rem;
+  display: flex;
+  float: left;
+  position: fixed;
+  z-index: 1;
+}
+.body-principal .header-index h1 {
+  color: rgba(10, 15, 50, 0.8196078431);
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  font-family: "Times New Roman", Times, serif;
+}
+.body-principal .header-index nav ul.menu {
+  right: 0px;
+  position: relative;
+  list-style-type: none;
+  float: inline-end;
+  padding: 0px 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  gap: 1rem;
+}
+.body-principal .header-index nav ul.menu li {
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+.body-principal .header-index nav ul.menu li a {
+  text-decoration: none;
+  color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.body-principal .header-index nav ul.menu li :after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+.body-principal .header-index nav ul.menu li :hover:after {
+  width: 100%;
+  right: 0;
+}
+@media (max-width: 500px) {
+  .body-principal .header-index .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-principal .header-index .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-principal .header-index .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-principal .header-index .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-principal .header-index .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-principal .header-index .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-principal .header-index .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-principal .header-index .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+.body-principal .header-index .subtitulo-principal {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+}
+.body-principal .main-index .subtitulo-seccion {
+  display: flex;
+  margin-left: 2rem;
+  border-radius: 10px;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.body-principal .main-index .subtitulo-seccion section {
+  height: fit-content;
+  background-color: rgba(255, 251, 196, 0.263);
+  border-radius: 10px;
+  margin-right: 2rem;
+}
+.body-principal .main-index .subtitulo-seccion h2 {
+  color: rgb(12, 14, 14);
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem 2rem;
+}
+.body-principal .main-index .subtitulo-seccion p {
+  margin-left: 1rem;
+  color: aliceblue;
+  font-size: 2rem;
+  font-family: serif;
+  padding: 1rem 1rem 2rem 1rem;
+}
+.body-principal .main-index .imagen-principal {
+  width: 100rem;
+  height: 30rem;
+  background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  background-attachment: fixed;
+  margin-left: 1rem;
+  border-radius: 15px;
+  margin-right: 2rem;
+}
+.body-principal .main-index .imagen-secundaria {
+  width: 100rem;
+  height: 30rem;
+  background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-attachment: fixed;
+  margin-right: 1rem;
+  border-radius: 10px;
+}
+.body-principal .main-index .a-viajar {
+  height: fit-content;
+  background-color: rgba(255, 251, 196, 0.263);
+  border-radius: 10px;
+  margin-right: 2rem;
+  margin-left: 1rem;
+  color: aliceblue;
+  font-size: 2rem;
+  font-family: serif;
+  padding: 1rem 1rem 2rem 1rem;
+}
+.body-principal .main-index .a-viajar h2 {
+  color: rgb(12, 14, 14);
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  margin-block: 1rem 2rem;
+}
+
+/* ------------INDEX MOBILE----------------------- */
+@media (max-width: 500px) {
+  .capa {
+    display: none;
+  }
+  .body-principal {
+    background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+  }
+  .body-principal .video-index {
+    display: none;
+  }
+  .body-principal .header-index .header-desktop {
+    display: none;
+  }
+  .body-principal .header-index nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .body-principal .header-index nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .body-principal .header-index nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .body-principal .header-index nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .body-principal .header-index nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .body-principal .header-index .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-principal .header-index .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-principal .header-index .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-principal .header-index .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) and (min-width: 501px) and (max-width: 800px) {
+  .body-principal .header-index .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-principal .header-index .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-principal .header-index .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-principal .header-index .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-principal .header-index .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) {
+  .body-principal .main-index {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin-block: 2rem;
+  }
+  .body-principal .main-index .subtitulo-seccion {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    border-radius: 10px;
+    gap: 1rem;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .body-principal .main-index .subtitulo-seccion section {
+    height: fit-content;
+    width: 90%;
+    background-color: rgba(255, 251, 196, 0.263);
+    border-radius: 10px;
+    margin-right: 0;
+    align-items: center;
+  }
+  .body-principal .main-index .subtitulo-seccion section h2 {
+    color: rgb(12, 14, 14);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem 2rem;
+  }
+  .body-principal .main-index .subtitulo-seccion section p {
+    margin-left: 1rem;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: serif;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .body-principal .main-index .subtitulo-seccion .imagen-principal {
+    width: 90%;
+    height: 20rem;
+    background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    margin-left: 0;
+    border-radius: 15px;
+    margin-right: 0;
+  }
+  .body-principal .main-index .subtitulo-seccion .imagen-secundaria {
+    width: 90%;
+    height: 20rem;
+    background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    background-attachment: local;
+    margin-right: 0;
+    border-radius: 20px;
+  }
+  .body-principal .main-index .a-viajar {
+    height: auto;
+    background-color: rgba(255, 251, 196, 0.263);
+    border-radius: 10px;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: serif;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .body-principal .main-index .a-viajar h2 {
+    color: rgb(12, 14, 14);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem 2rem;
+  }
+}
+/* ------------INDEX TABLET----------------------- */
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-principal {
+    background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+  }
+  .body-principal .video-index {
+    display: none;
+  }
+  .body-principal .capa {
+    display: none;
+  }
+  .body-principal .header-desktop {
+    display: none;
+  }
+  .body-principal nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .body-principal nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .body-principal nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .body-principal nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .body-principal nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) and (max-width: 500px) {
+  .body-principal .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-principal .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-principal .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-principal .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-principal .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-principal .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-principal .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) and (min-width: 501px) and (max-width: 800px) {
+  .body-principal .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-principal .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-principal .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-principal .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-principal .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-principal .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-principal .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-principal .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-principal .main-index {
+    width: 100%;
+    display: grid;
+    row-gap: 2rem;
+    margin-block: 2rem;
+  }
+  .body-principal .main-index .subtitulo-seccion {
+    justify-self: center;
+    display: grid;
+    align-items: center;
+    margin-left: 0;
+    border-radius: 10px;
+    gap: 1rem;
+    margin-bottom: 0;
+    grid-template-columns: 45% 55%;
+    width: 90%;
+  }
+  .body-principal .main-index .subtitulo-seccion section {
+    height: fit-content;
+    background-color: rgba(255, 251, 196, 0.263);
+    border-radius: 10px;
+    margin-right: 0;
+    align-items: center;
+  }
+  .body-principal .main-index .subtitulo-seccion h2 {
+    color: rgb(12, 14, 14);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem 2rem;
+  }
+  .body-principal .main-index .subtitulo-seccion p {
+    margin-left: 1rem;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: serif;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .body-principal .main-index .subtitulo-seccion .imagen-principal {
+    width: 100%;
+    height: 100%;
+    background: url("../imagenes-p/index/pexels-jeshootscom-1201995.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    border-radius: 15px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .body-principal .main-index .subtitulo-seccion .imagen-secundaria {
+    width: 100%;
+    height: 100%;
+    background: url("../imagenes-p/index/pexels-dominika-roseclay-1252500.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    background-attachment: fixed;
+    margin-right: 0;
+    border-radius: 20px;
+  }
+  .body-principal .main-index .a-viajar {
+    justify-self: center;
+    height: auto;
+    background-color: rgba(255, 251, 196, 0.263);
+    border-radius: 10px;
+    margin-right: 0;
+    margin-left: 0;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: serif;
+    padding: 1rem 1rem 2rem 1rem;
+  }
+  .body-principal .main-index .a-viajar h2 {
+    color: rgb(12, 14, 14);
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    margin-block: 1rem 2rem;
+  }
+}
+/*---FOOTER---*/
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .logo-footer img {
+  width: 12rem;
+}
+footer .redes {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  grid-template-rows: 0.5fr 1fr;
+}
+footer .redes a {
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  margin-left: 2rem;
+  width: 5rem;
+  height: 5rem;
+  margin: 0;
+}
+footer .redes a img {
+  width: 12rem;
+  display: flex;
+}
+footer .redes a h3 {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  color: peru;
+}
+footer .redes ul {
+  display: flex;
+  height: fit-content;
+  column-gap: 1rem;
+}
+footer .contacto {
+  align-items: center;
+  justify-content: center;
+  display: grid;
+}
+footer .contacto ul li {
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+}
+footer h3 {
+  font-size: 1.5rem;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  color: peru;
+}
+
+@media (max-width: 500px) {
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    width: 100%;
+    row-gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    border-width: 2rem;
+  }
+  footer .logo-footer img {
+    width: 12rem;
+  }
+  footer .redes {
+    grid-column: span 2;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    margin-bottom: 3rem;
+    grid-template-rows: 1fr 1fr;
+  }
+  footer .redes h3 {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    color: peru;
+  }
+  footer .redes ul {
+    display: flex;
+    height: fit-content;
+    column-gap: 1rem;
+    /* margin-left: 38rem; */
+  }
+  footer .redes a {
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+  }
+  footer .redes a img {
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+  }
+  footer .contacto {
+    align-items: center;
+    display: grid;
+    row-gap: 1rem;
+  }
+  footer .contacto h3 {
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    color: peru;
+    margin-left: 3rem;
+  }
+  footer .contacto ul li {
+    display: flex;
+    color: aliceblue;
+    justify-content: center;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    row-gap: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  footer .contacto {
+    grid-template-rows: 1fr 1fr;
+  }
+  footer .contacto h3 {
+    font-size: 1.1rem;
+    justify-self: center;
+    align-self: center;
+    color: peru;
+  }
+  footer .redes {
+    margin: 0;
+  }
+  footer .redes ul {
+    padding: 0;
+  }
+  footer .redes ul a {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*-----------SENDERISMO-----------------*/
+.body-senderismo {
+  min-height: 100vh;
+  position: relative;
+}
+.body-senderismo .video-senderismo {
+  object-fit: contain;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  padding: 0;
+}
+.body-senderismo .video-senderismo iframe {
+  position: relative;
+}
+.body-senderismo .header-senderismo {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 15rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.body-senderismo .header-senderismo .bg-dark {
+  display: none;
+}
+.body-senderismo .header-senderismo h1 {
+  color: bisque;
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+}
+.body-senderismo .header-senderismo img {
+  width: 15rem;
+  display: flex;
+  float: left;
+  position: fixed;
+  z-index: 1;
+}
+.body-senderismo .header-senderismo nav ul.menu {
+  right: 0px;
+  position: relative;
+  list-style-type: none;
+  float: inline-end;
+  padding: 0px 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  gap: 1rem;
+}
+.body-senderismo .header-senderismo nav ul.menu li {
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+.body-senderismo .header-senderismo nav ul.menu li a {
+  text-decoration: none;
+  color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.body-senderismo .header-senderismo nav ul.menu li :after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+.body-senderismo .header-senderismo nav ul.menu li :hover:after {
+  width: 100%;
+  right: 0;
+}
+@media (max-width: 500px) {
+  .body-senderismo .header-senderismo .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-senderismo .header-senderismo .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-senderismo .header-senderismo .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+.body-senderismo .main-send .presentacion-senderismo {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(16, 130, 54, 0);
+  padding-block: 1rem;
+  margin-block: 2rem;
+  border-top: solid 1px;
+}
+.body-senderismo .main-send .presentacion-senderismo h2 {
+  color: rgb(49, 33, 14);
+  font-size: 2.5rem;
+}
+.body-senderismo .main-send .presentacion-senderismo p {
+  margin-top: 1.2rem;
+  margin-left: 1rem;
+  color: rgb(22, 114, 139);
+  font-size: 1.5rem;
+  font-family: serif;
+}
+.body-senderismo .main-send .que-es {
+  border: solid;
+  background-color: rgba(255, 228, 196, 0.849);
+  height: fit-content;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.body-senderismo .main-send .donde-se-hace {
+  background-color: rgba(255, 228, 196, 0.776);
+  border: solid black;
+  margin-top: 25vh;
+  height: fit-content;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.body-senderismo .main-send .video-send {
+  position: relative;
+  border-radius: 15px;
+  width: 20%;
+}
+.body-senderismo .main-send .beneficios-tips-subtitulo {
+  color: antiquewhite;
+  font-size: 2rem;
+  font-family: "Bree Serif";
+  background-color: rgb(0, 0, 0);
+  -webkit-background-clip: text;
+  margin-left: 2rem;
+  margin-top: 3rem;
+}
+.body-senderismo .main-send .grid-container {
+  margin-top: 10rem;
+  display: grid;
+  column-gap: 20rem;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+.body-senderismo .main-send .grid-container article {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  align-content: center;
+}
+.body-senderismo .main-send .grid-container .video-benef {
+  height: 40rem;
+  border-radius: 15px;
+  width: 20rem;
+}
+.body-senderismo .main-send .grid-container .video-tips {
+  height: 40rem;
+  border-radius: 15px;
+  width: 20rem;
+}
+.body-senderismo .main-send .grid-container h3 {
+  justify-self: center;
+  align-self: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-family: "Bree Serif";
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 0px 3px 0px 3px;
+}
+.body-senderismo .main-send .tipos-de-senderismo {
+  margin-block: 3rem;
+  background-color: rgba(250, 235, 215, 0.88);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 75vw;
+  border: solid 1px;
+}
+.body-senderismo .main-send .tipos-de-senderismo h3 {
+  margin-left: 1rem;
+  font-family: "Times New Roman";
+  font-size: 1.8rem;
+}
+.body-senderismo .main-send .tipos-de-senderismo ul li {
+  display: flex;
+  border: solid black 1px;
+  margin-block: 1rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+.body-senderismo .main-send .donde-realizarlo {
+  background-color: rgba(42, 121, 11, 0.295);
+  position: relative;
+}
+.body-senderismo .main-send .donde-realizarlo article {
+  background-color: antiquewhite;
+  padding-top: 1px;
+  margin-inline: 1rem;
+  border-radius: 15px;
+  border: solid 1px;
+}
+.body-senderismo .main-send .donde-realizarlo article h3 {
+  display: flex;
+  font-family: "Times New Roman";
+  font-size: 1.7rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.body-senderismo .main-send .donde-realizarlo article p {
+  padding-block: 1rem 0.5rem;
+  font-size: 1.2rem;
+  margin-left: 1rem;
+}
+.body-senderismo .main-send .donde-realizarlo .mapas {
+  margin-top: 3rem;
+  display: flex;
+  overflow: auto;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+.body-senderismo .main-send .donde-realizarlo .mapas h3 {
+  font-size: 1.5rem;
+}
+
+/* ---SENDERISMO MOBILE--- */
+@media (max-width: 500px) {
+  .body-senderismo {
+    background: url("../imagenes-p/send/senderismo-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .body-senderismo .video-senderismo {
+    display: none;
+  }
+  .body-senderismo .header-desktop {
+    display: none;
+  }
+  .body-senderismo nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .body-senderismo nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .body-senderismo nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .body-senderismo nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .body-senderismo nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .body-senderismo .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-senderismo .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-senderismo .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-senderismo .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-senderismo .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) and (min-width: 501px) and (max-width: 800px) {
+  .body-senderismo .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-senderismo .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-senderismo .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-senderismo .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-senderismo .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) {
+  .body-senderismo .main-send {
+    display: grid;
+    width: 100%;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    grid-template-columns: 100%;
+  }
+  .body-senderismo .main-send .presentacion-senderismo {
+    display: grid;
+    justify-self: center;
+    background-color: rgba(16, 130, 54, 0);
+    padding-block: 1rem;
+    margin-block: 2rem;
+    border-top: solid 1px;
+    row-gap: 2rem;
+    width: 100%;
+  }
+  .body-senderismo .main-send .presentacion-senderismo h2 {
+    color: rgb(49, 33, 14);
+    font-size: 2.5rem;
+  }
+  .body-senderismo .main-send .presentacion-senderismo p {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    color: rgb(22, 114, 139);
+    font-size: 1.5rem;
+    font-family: serif;
+  }
+  .body-senderismo .main-send .que-es {
+    justify-self: center;
+    border: solid;
+    background-color: rgba(255, 228, 196, 0.849);
+    height: fit-content;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 90%;
+  }
+  .body-senderismo .main-send .donde-se-hace {
+    background-color: rgba(255, 228, 196, 0.776);
+    border: solid black;
+    margin: 0;
+    height: fit-content;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  .body-senderismo .main-send .video-send {
+    width: 75%;
+    position: relative;
+    border-radius: 15px;
+    justify-self: center;
+    height: 40rem;
+  }
+  .body-senderismo .main-send .beneficios-tips-subtitulo {
+    color: rgb(221, 134, 20);
+    font-size: 2rem;
+    font-family: "Bree Serif";
+    background-color: rgba(0, 0, 0, 0.879);
+    margin: 0;
+    -webkit-background-clip: unset;
+    border-radius: 15px;
+    width: 90%;
+    justify-self: center;
+    padding-inline: 1rem;
+  }
+  .body-senderismo .main-send .grid-container {
+    margin-top: 2rem;
+    display: grid;
+    column-gap: 2rem;
+    grid-template-columns: 100%;
+    justify-self: center;
+    width: 90%;
+  }
+  .body-senderismo .main-send .grid-container article {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    align-content: center;
+    justify-self: center;
+    width: 90%;
+  }
+  .body-senderismo .main-send .grid-container article h3 {
+    justify-self: center;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: "Bree Serif";
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 0px 3px 0px 3px;
+  }
+  .body-senderismo .main-send .grid-container article .video-benef {
+    height: 50rem;
+    width: 90%;
+    border-radius: 15px;
+    justify-self: center;
+  }
+  .body-senderismo .main-send .grid-container article .video-tips {
+    height: 50rem;
+    width: 90%;
+    border-radius: 15px;
+    justify-self: center;
+  }
+  .body-senderismo .main-send .tipos-de-senderismo {
+    margin-block: 3rem;
+    background-color: rgba(250, 235, 215, 0.88);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 80%;
+    border: solid 1px;
+    justify-self: center;
+  }
+  .body-senderismo .main-send .tipos-de-senderismo h3 {
+    margin-left: 1rem;
+    font-family: "Times New Roman";
+    font-size: 1.8rem;
+  }
+  .body-senderismo .main-send .tipos-de-senderismo ul li {
+    display: flex;
+    border: solid black 1px;
+    margin-block: 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  .body-senderismo .main-send .donde-realizarlo {
+    background-color: rgba(42, 121, 11, 0.295);
+    width: 100%;
+    margin-left: 0;
+  }
+  .body-senderismo .main-send .donde-realizarlo article {
+    background-color: antiquewhite;
+    padding-top: 1px;
+    margin-inline: 1rem;
+    border-radius: 15px;
+    border: solid 1px;
+  }
+  .body-senderismo .main-send .donde-realizarlo article h3 {
+    display: flex;
+    font-family: "Times New Roman";
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  .body-senderismo .main-send .donde-realizarlo article p {
+    padding-block: 1rem 0.5rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  .body-senderismo .main-send .donde-realizarlo .mapas {
+    margin-top: 3rem;
+    display: flex;
+    overflow: auto;
+    gap: 1rem;
+    margin-left: 0;
+    padding: 0.2rem;
+  }
+  .body-senderismo .main-send .donde-realizarlo .mapas h3 {
+    font-size: 1.5rem;
+  }
+}
+/* ---SENDERISMO TABLET--- */
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-senderismo {
+    background: url("../imagenes-p/send/senderismo-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: grid;
+    grid-auto-columns: 100%;
+  }
+  .body-senderismo .video-senderismo {
+    display: none;
+  }
+  .body-senderismo .header-desktop {
+    display: none;
+  }
+  .body-senderismo nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .body-senderismo nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .body-senderismo nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .body-senderismo nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .body-senderismo nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) and (max-width: 500px) {
+  .body-senderismo .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-senderismo .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-senderismo .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-senderismo .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-senderismo .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) and (min-width: 501px) and (max-width: 800px) {
+  .body-senderismo .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-senderismo .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-senderismo .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-senderismo .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-senderismo .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-senderismo .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-senderismo .main-send {
+    display: grid;
+    width: 100%;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+    justify-content: center;
+    grid-template-columns: 100%;
+  }
+  .body-senderismo .main-send .presentacion-senderismo {
+    display: grid;
+    justify-self: center;
+    background-color: rgba(16, 130, 54, 0);
+    padding-block: 1rem;
+    margin-block: 2rem;
+    border-top: solid 1px;
+    row-gap: 2rem;
+    width: 100%;
+  }
+  .body-senderismo .main-send .presentacion-senderismo h2 {
+    color: rgb(49, 33, 14);
+    font-size: 2.5rem;
+  }
+  .body-senderismo .main-send .presentacion-senderismo p {
+    margin-top: 1.2rem;
+    margin-left: 1rem;
+    color: rgb(22, 114, 139);
+    font-size: 1.5rem;
+    font-family: serif;
+  }
+  .body-senderismo .main-send .presentacion-senderismo .que-es {
+    justify-self: center;
+    border: solid;
+    background-color: rgba(255, 228, 196, 0.849);
+    height: fit-content;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  .body-senderismo .main-send .presentacion-senderismo .donde-se-hace {
+    background-color: rgba(255, 228, 196, 0.776);
+    border: solid black;
+    margin: 0;
+    height: fit-content;
+    padding: 0;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .body-senderismo .main-send .presentacion-senderismo .video-send {
+    width: 25rem;
+    position: relative;
+    border-radius: 15px;
+    justify-self: center;
+    height: 40rem;
+  }
+  .body-senderismo .main-send .beneficios-tips-subtitulo {
+    color: rgb(221, 134, 20);
+    font-size: 2rem;
+    font-family: "Bree Serif";
+    background-color: rgba(0, 0, 0, 0.879);
+    margin: 0;
+    -webkit-background-clip: unset;
+    border-radius: 15px;
+    width: 90%;
+    justify-self: center;
+    padding-inline: 0;
+  }
+  .body-senderismo .main-send .grid-container {
+    margin-top: 10rem;
+    display: grid;
+    column-gap: 20rem;
+    grid-template-columns: 100%;
+    justify-self: center;
+  }
+  .body-senderismo .main-send .grid-container article {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    align-content: center;
+  }
+  .body-senderismo .main-send .grid-container article h3 {
+    justify-self: center;
+    align-self: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-family: "Bree Serif";
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 0px 3px 0px 3px;
+  }
+  .body-senderismo .main-send .grid-container .video-benef {
+    height: 40rem;
+    border-radius: 15px;
+  }
+  .body-senderismo .main-send .grid-container .video-tips {
+    height: 40rem;
+    border-radius: 15px;
+  }
+  .body-senderismo .main-send .tipos-de-senderismo {
+    margin-block: 3rem;
+    background-color: rgba(250, 235, 215, 0.88);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 80%;
+    border: solid 1px;
+    justify-self: center;
+  }
+  .body-senderismo .main-send .tipos-de-senderismo h3 {
+    margin-left: 1rem;
+    font-family: "Times New Roman";
+    font-size: 1.8rem;
+  }
+  .body-senderismo .main-send .tipos-de-senderismo ul li {
+    display: flex;
+    border: solid black 1px;
+    margin-block: 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    width: fit-content;
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  .body-senderismo .main-send .donde-realizarlo {
+    background-color: rgba(42, 121, 11, 0.295);
+    position: relative;
+    width: 100%;
+  }
+  .body-senderismo .main-send .donde-realizarlo article {
+    background-color: antiquewhite;
+    padding-top: 1px;
+    margin-inline: 1rem;
+    border-radius: 15px;
+    border: solid 1px;
+    width: 90%;
+  }
+  .body-senderismo .main-send .donde-realizarlo article h3 {
+    display: flex;
+    font-family: "Times New Roman";
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  .body-senderismo .main-send .donde-realizarlo article p {
+    padding-block: 1rem 0.5rem;
+    font-size: 1.2rem;
+    margin-left: 1rem;
+  }
+  .body-senderismo .main-send .donde-realizarlo .mapas {
+    margin-top: 3rem;
+    display: flex;
+    overflow: auto;
+    gap: 1rem;
+    margin-left: 0;
+  }
+  .body-senderismo .main-send .donde-realizarlo .mapas h3 {
+    font-size: 1.5rem;
+  }
+}
+/* INDISPENSABLES*/
+.body-indispensables {
+  height: 20rem;
+  background: url("../imagenes-p/indispensables/maleta.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: grid;
+  row-gap: 2rem;
+  justify-content: center;
+  grid-template-columns: 1fr;
+}
+.body-indispensables .bg-dark {
+  display: none;
+}
+.body-indispensables .header-indispensables {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 15rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.body-indispensables .header-indispensables .header-desktop {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  background-color: rgba(250, 235, 215, 0.878);
+  border-radius: 30px;
+  background-size: cover;
+}
+.body-indispensables .header-indispensables .header-desktop img {
+  width: 15rem;
+  display: grid;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+.body-indispensables .header-indispensables .header-desktop h1 {
+  color: rgba(10, 15, 50, 0.8196078431);
+  font-size: 4rem;
+  display: flex;
+  justify-content: start;
+  position: sticky;
+  top: 0px;
+}
+.body-indispensables .header-indispensables .header-desktop nav {
+  grid-column: span 2;
+}
+.body-indispensables .header-indispensables .header-desktop nav ul.menu {
+  right: 0px;
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  float: inline-end;
+  padding: 0px 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  gap: 1rem;
+}
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li {
+  display: flex;
+  position: relative;
+}
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li a {
+  text-decoration: none;
+  color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li a :hover {
+  font-size: 1.7rem;
+  transition: 0.2s;
+}
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li :after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+.body-indispensables .header-indispensables .header-desktop nav ul.menu li :hover:after {
+  width: 100%;
+  right: 0;
+}
+.body-indispensables .header-indispensables .header-desktop nav a {
+  text-decoration: underline;
+  color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.2rem;
+}
+.body-indispensables .main-indispensables {
+  background-color: rgba(10, 10, 10, 0.5);
+  display: grid;
+  gap: 2rem;
+  width: 100%;
+}
+.body-indispensables .main-indispensables .encabezado-indispensables {
+  background-color: rgba(222, 184, 135, 0.7);
+  font-size: 2.5rem;
+  padding-inline: 1rem;
+}
+.body-indispensables .main-indispensables ol {
+  display: grid;
+  row-gap: 1rem;
+  margin-left: 3rem;
+}
+.body-indispensables .main-indispensables ol li {
+  color: antiquewhite;
+  font-size: 2rem;
+  justify-self: baseline;
+}
+.body-indispensables .main-indispensables section {
+  border: solid black;
+  border-radius: 2rem;
+  display: grid;
+  padding: 1rem 2rem;
+}
+.body-indispensables .main-indispensables p {
+  font-size: 1.5rem;
+  color: aliceblue;
+  background-size: auto;
+}
+
+@media (max-width: 500px) {
+  .body-indispensables {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    grid-auto-columns: 100%;
+    position: relative;
+  }
+  .body-indispensables .header-indispensables .header-desktop {
+    display: none;
+  }
+  .body-indispensables .header-indispensables .bg-dark .container-fluid {
+    padding: 0;
+  }
+  .body-indispensables .header-indispensables .bg-dark .container-fluid .navbar-toggler {
+    width: 80%;
+    justify-self: center;
+  }
+  .body-indispensables nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .body-indispensables nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .body-indispensables nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .body-indispensables nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .body-indispensables nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .body-indispensables .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-indispensables .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-indispensables .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-indispensables .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-indispensables .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-indispensables .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) and (min-width: 501px) and (max-width: 800px) {
+  .body-indispensables .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-indispensables .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-indispensables .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-indispensables .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-indispensables .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-indispensables .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) {
+  .body-indispensables .main-indispensables {
+    background-color: rgba(10, 10, 10, 0.5);
+    display: grid;
+    gap: 2rem;
+    width: 100%;
+  }
+  .body-indispensables .main-indispensables .encabezado-indispensables {
+    background-color: rgba(222, 184, 135, 0.7);
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 90%;
+    justify-self: center;
+  }
+  .body-indispensables .main-indispensables ol {
+    display: grid;
+    row-gap: 1rem;
+    margin-left: 0;
+  }
+  .body-indispensables .main-indispensables ol li {
+    color: antiquewhite;
+    font-size: 2rem;
+    justify-self: baseline;
+  }
+  .body-indispensables .main-indispensables section {
+    border: solid black;
+    border-radius: 2rem;
+    display: grid;
+    padding: 1rem 2rem;
+  }
+  .body-indispensables .main-indispensables p {
+    font-size: 1.5rem;
+    color: aliceblue;
+    background-size: auto;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-indispensables {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .body-indispensables .header-indispensables .header-desktop {
+    display: none;
+  }
+  .body-indispensables nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .body-indispensables nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .body-indispensables nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .body-indispensables nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .body-indispensables nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) and (max-width: 500px) {
+  .body-indispensables .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-indispensables .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-indispensables .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-indispensables .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-indispensables .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-indispensables .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) and (min-width: 501px) and (max-width: 800px) {
+  .body-indispensables .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-indispensables .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-indispensables .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-indispensables .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-indispensables .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-indispensables .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-indispensables .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .barra-responsive {
+    width: 100%;
+  }
+}
+/* CAMPING */
+.body-camping {
+  min-height: 100vh;
+  position: relative;
+}
+.body-camping .video-fondo-camping {
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.body-camping .header-camping {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+.body-camping .header-camping .bg-dark {
+  display: none;
+}
+.body-camping .header-camping .header-desktop {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+}
+.body-camping .header-camping nav ul.menu {
+  right: 0px;
+  position: relative;
+  list-style-type: none;
+  float: inline-end;
+  padding: 0px 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  gap: 1rem;
+}
+.body-camping .header-camping nav ul.menu li {
+  display: inline-block;
+  position: relative;
+  margin-right: 8px;
+}
+.body-camping .header-camping nav ul.menu li a {
+  text-decoration: none;
+  color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.body-camping .header-camping nav ul.menu li :after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+.body-camping .header-camping nav ul.menu li :hover:after {
+  width: 100%;
+  right: 0;
+}
+@media (max-width: 500px) {
+  .body-camping .header-camping .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-camping .header-camping .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-camping .header-camping .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-camping .header-camping .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-camping .header-camping .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+.body-camping .header-camping img {
+  width: 15rem;
+  display: grid;
+  position: relative;
+  float: left;
+  z-index: 1;
+}
+.body-camping .header-camping h1 {
+  color: rgba(10, 15, 50, 0.8196078431);
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0px;
+  background-color: antiquewhite;
+  border-radius: 100px;
+}
+.body-camping .main-camping {
+  display: grid;
+  row-gap: 2rem;
+  margin-bottom: 2rem;
+}
+.body-camping .main-camping section {
+  display: grid;
+  align-self: center;
+  align-items: center;
+  justify-self: center;
+  justify-content: center;
+  border: solid;
+  row-gap: 1rem;
+  background-color: rgba(255, 228, 196, 0.849);
+  height: fit-content;
+  padding: 1.5rem;
+  border-radius: 10px;
+}
+.body-camping .main-camping section h2 {
+  font-size: 2rem;
+}
+.body-camping .main-camping section p {
+  font-size: 1.2rem;
+}
+.body-camping .main-camping section h3 {
+  font-size: 2rem;
+}
+.body-camping .main-camping section h3 {
+  justify-self: center;
+  align-items: center;
+}
+.body-camping .main-camping article {
+  display: grid;
+  row-gap: 1rem;
+}
+.body-camping .main-camping article h2 {
+  justify-self: center;
+  background-color: rgba(255, 228, 196, 0.849);
+  border-radius: 10px;
+}
+.body-camping .main-camping .video-camping {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  width: 25rem;
+  height: 40rem;
+  position: relative;
+  border-radius: 15px;
+}
+.body-camping .main-camping .que-es p {
+  font-size: 1.2rem;
+}
+.body-camping .main-camping .que-es h2 {
+  font-size: 2rem;
+}
+.body-camping .main-camping .articulos-camping {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.body-camping .main-camping .video-que-necesito {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  height: 40rem;
+  width: 75%;
+  border-radius: 15px;
+}
+.body-camping .main-camping .video-recomendaciones {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  height: 40rem;
+  width: 25rem;
+  border-radius: 15px;
+}
+
+/* ------------CAMPING MOBILE----------------------- */
+@media (max-width: 500px) {
+  .body-camping {
+    height: 20rem;
+    background: url("../imagenes-p/cam/wp1857439.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    position: relative;
+  }
+  .body-camping .video-fondo-camping {
+    display: none;
+  }
+  .body-camping .header-camping {
+    grid-template-columns: 1fr;
+  }
+  .body-camping .header-camping .header-desktop {
+    display: none;
+  }
+  .body-camping nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .body-camping nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .body-camping nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .body-camping nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .body-camping nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .body-camping .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-camping .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-camping .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-camping .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-camping .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-camping .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-camping .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) and (min-width: 501px) and (max-width: 800px) {
+  .body-camping .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-camping .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-camping .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-camping .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-camping .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-camping .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-camping .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) {
+  .body-camping .main-camping {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .body-camping .main-camping .video-camping {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 75%;
+    height: 40rem;
+    position: relative;
+    border-radius: 15px;
+  }
+  .body-camping .main-camping section {
+    display: grid;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    border: solid;
+    row-gap: 1rem;
+    background-color: rgba(255, 228, 196, 0.849);
+    height: fit-content;
+    width: 90%;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  .body-camping .main-camping section h3 {
+    justify-self: center;
+    align-items: center;
+  }
+  .body-camping .main-camping .articulos-camping {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .body-camping .main-camping article {
+    display: grid;
+    row-gap: 1rem;
+    width: 100%;
+  }
+  .body-camping .main-camping article h2 {
+    justify-self: center;
+    background-color: rgba(255, 228, 196, 0.849);
+    border-radius: 10px;
+  }
+  .body-camping .main-camping .video-que-necesito {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 75%;
+    position: relative;
+    border-radius: 15px;
+  }
+  .body-camping .main-camping .video-recomendaciones {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 75%;
+    position: relative;
+    border-radius: 15px;
+  }
+}
+/* ------------CAMPING TABLET----------------------- */
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-camping {
+    background: url("../imagenes-p/cam/wp1857439.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  .body-camping .capa {
+    display: none;
+  }
+  .body-camping .video-fondo-camping {
+    display: none;
+  }
+  .body-camping .header-camping {
+    grid-template-columns: 1fr;
+  }
+  .body-camping .header-camping .header-desktop {
+    display: none;
+  }
+  .body-camping nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .body-camping nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .body-camping nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .body-camping nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .body-camping nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) and (max-width: 500px) {
+  .body-camping .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-camping .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-camping .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-camping .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-camping .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-camping .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-camping .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) and (min-width: 501px) and (max-width: 800px) {
+  .body-camping .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-camping .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-camping .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-camping .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-camping .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-camping .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-camping .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-camping .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (min-width: 501px) and (max-width: 800px) {
+  .body-camping .main-camping {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    row-gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  .body-camping .main-camping .video-camping {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 75%;
+    position: relative;
+    border-radius: 15px;
+  }
+  .body-camping .main-camping section {
+    display: grid;
+    align-self: center;
+    align-items: center;
+    justify-self: center;
+    justify-content: center;
+    border: solid;
+    row-gap: 1rem;
+    background-color: rgba(255, 228, 196, 0.849);
+    height: fit-content;
+    width: 90%;
+    padding: 1.5rem;
+    border-radius: 10px;
+  }
+  .body-camping .main-camping section h3 {
+    justify-self: center;
+    align-items: center;
+  }
+  .body-camping .main-camping .articulos-camping {
+    column-gap: 1rem;
+    justify-content: center;
+  }
+  .body-camping .main-camping .articulos-camping article {
+    display: grid;
+    row-gap: 1rem;
+  }
+  .body-camping .main-camping .articulos-camping article h2 {
+    justify-self: center;
+    background-color: rgba(255, 228, 196, 0.849);
+    border-radius: 10px;
+  }
+  .body-camping .main-camping .articulos-camping article .video-que-necesito {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+  }
+  .body-camping .main-camping .articulos-camping article .video-recomendaciones {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+  }
+}
+/*FORMULARIO */
+.body-formulario {
+  background: url("../imagenes-p/index/pexels-janiere-fernandez-2405101.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.body-formulario .header-formulario {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  justify-content: space-between;
+  align-items: center;
+}
+.body-formulario .header-formulario .header-desktop {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  height: fit-content;
+  padding-bottom: 2rem;
+  margin-bottom: 1rem;
+  background-color: rgba(250, 235, 215, 0.878);
+  border-radius: 30px;
+  background-size: cover;
+}
+.body-formulario .header-formulario .header-desktop img {
+  width: 15rem;
+  display: grid;
+  float: left;
+  position: relative;
+  z-index: 1;
+}
+.body-formulario .header-formulario .header-desktop h1 {
+  color: rgba(10, 15, 50, 0.8196078431);
+  font-size: 4rem;
+  display: flex;
+  justify-content: start;
+  position: sticky;
+  top: 0px;
+}
+.body-formulario .header-formulario .header-desktop nav {
+  grid-column: span 2;
+}
+.body-formulario .header-formulario .header-desktop nav ul.menu {
+  right: 0px;
+  position: relative;
+  list-style-type: none;
+  display: flex;
+  float: inline-end;
+  padding: 0px 25px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  gap: 1rem;
+}
+.body-formulario .header-formulario .header-desktop nav ul.menu li {
+  display: flex;
+  position: relative;
+}
+.body-formulario .header-formulario .header-desktop nav ul.menu li a {
+  text-decoration: none;
+  color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.body-formulario .header-formulario .header-desktop nav ul.menu li a :hover {
+  font-size: 1.7rem;
+  transition: 0.2s;
+}
+.body-formulario .header-formulario .header-desktop nav ul.menu li :after {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transition: all 0.5s;
+  will-change: width;
+}
+.body-formulario .header-formulario .header-desktop nav ul.menu li :hover:after {
+  width: 100%;
+  right: 0;
+}
+.body-formulario .header-formulario .header-desktop nav a {
+  text-decoration: underline;
+  color: rgba(244, 138, 32, 0.8196078431);
+  font-size: 1.2rem;
+}
+.body-formulario .header-formulario .bg-dark {
+  display: none;
+}
+.body-formulario .main-formulario h2 {
+  background-color: rgba(250, 235, 215, 0.771);
+  border-radius: 10px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+.body-formulario .main-formulario .formulario {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+}
+.body-formulario .main-formulario .formulario form {
+  background-color: rgba(240, 248, 255, 0.805);
+  margin: 0 auto;
+  width: 400px;
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+.body-formulario .main-formulario .formulario ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.body-formulario .main-formulario .formulario form li + li {
+  margin-top: 1em;
+}
+.body-formulario .main-formulario .formulario label {
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+.body-formulario .main-formulario .formulario input,
+.body-formulario .main-formulario .formulario textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  box-sizing: border-box;
+  border: 1px solid #999;
+}
+.body-formulario .main-formulario .formulario input:focus,
+.body-formulario .main-formulario .formulario textarea:focus {
+  border-color: #000;
+}
+.body-formulario .main-formulario .formulario textarea {
+  vertical-align: top;
+  height: 5em;
+}
+.body-formulario .main-formulario .formulario .button {
+  padding-left: 90px;
+}
+.body-formulario .main-formulario .formulario button {
+  margin-left: 0.5em;
+}
+
+@media (max-width: 500px) {
+  .body-formulario .header-formulario {
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
+  }
+  .body-formulario .header-formulario .header-desktop {
+    display: none;
+  }
+  .body-formulario .header-formulario nav ul.menu {
+    right: 0px;
+    position: relative;
+    list-style-type: none;
+    float: inline-end;
+    padding: 0px 25px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+    gap: 1rem;
+  }
+  .body-formulario .header-formulario nav ul.menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+  .body-formulario .header-formulario nav ul.menu li a {
+    text-decoration: none;
+    color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.2rem;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .body-formulario .header-formulario nav ul.menu li :after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: rgba(244, 138, 32, 0.8196078431);
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all 0.5s;
+    will-change: width;
+  }
+  .body-formulario .header-formulario nav ul.menu li :hover:after {
+    width: 100%;
+    right: 0;
+  }
+}
+@media (max-width: 500px) and (max-width: 500px) {
+  .body-formulario .header-formulario .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) and (min-width: 501px) and (max-width: 800px) {
+  .body-formulario .header-formulario .bg-dark {
+    background-color: rgba(117, 119, 3, 0.596) !important;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid a {
+    text-transform: uppercase;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid a img {
+    display: grid;
+    width: 100px;
+    position: relative;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo {
+    display: grid;
+    justify-content: center;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo h1 {
+    color: rgba(10, 15, 50, 0.8196078431);
+    font-size: 2rem;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .titulo h2 {
+    font-size: 1rem;
+    justify-self: center;
+    font-family: "Times New Roman", Times, serif;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .navbar-toggler {
+    width: 50%;
+    justify-self: center;
+  }
+  .body-formulario .header-formulario .bg-dark .container-fluid .navbar-collapse {
+    grid-column: span 3;
+  }
+}
+@media (max-width: 500px) {
+  .body-formulario .main-formulario {
+    display: grid;
+    justify-content: center;
+  }
+  .body-formulario .main-formulario .formulario {
+    width: 90%;
+    justify-self: center;
+  }
+  .body-formulario .main-formulario .formulario form {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=Estilos.style.css.map */
