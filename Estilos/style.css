@@ -18,16 +18,15 @@
 .body-principal {
   min-height: 100vh;
   position: relative;
-  background-color: gray;
+  background: url("../imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
 }
 .body-principal .video-index {
-  object-fit: cover;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  z-index: -1;
+  display: none;
 }
 .body-principal .header-index {
   background-size: cover;
@@ -836,19 +835,17 @@ footer h3 {
 .body-senderismo {
   min-height: 100vh;
   position: relative;
+  background: url("../imagenes-p/send/senderismo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 100%;
 }
 .body-senderismo .video-senderismo {
-  object-fit: contain;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  padding: 0;
-}
-.body-senderismo .video-senderismo iframe {
-  position: relative;
+  display: none;
 }
 .body-senderismo .header-senderismo {
   background-size: cover;
@@ -2171,15 +2168,17 @@ footer h3 {
 .body-camping {
   min-height: 100vh;
   position: relative;
+  height: 20rem;
+  background: url("../imagenes-p/cam/wp1857439.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
 }
 .body-camping .video-fondo-camping {
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  display: none;
 }
 .body-camping .header-camping {
   display: grid;

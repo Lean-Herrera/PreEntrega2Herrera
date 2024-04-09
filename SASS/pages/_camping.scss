@@ -2,16 +2,20 @@
     min-height: 100vh;
     position: relative;
 
-    .video-fondo-camping {
-        object-fit: cover;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
+    
+        height: 20rem;
+        background: url("../imagenes-p/cam/wp1857439.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        position: relative;
 
-    }
+        .video-fondo-camping {
+            display: none;
+
+        }
 
 
     .header-camping {
