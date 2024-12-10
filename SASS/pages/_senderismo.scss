@@ -2,7 +2,7 @@
     min-height: 100vh;
     position: relative;
 
-    background: url("../../public/imagenes-p/send/senderismo-mobile.jpg");
+    background: url("../public/imagenes-p/send/senderismo-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -321,7 +321,7 @@ iframe{
 @include mq-mobile {
 
     .body-senderismo {
-        background: url("../../public/imagenes-p/send/senderismo-mobile.jpg");
+        background: url("../public/imagenes-p/send/senderismo-mobile.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -613,7 +613,7 @@ iframe{
 
 
     .body-senderismo {
-        background: url("../../public/imagenes-p/send/senderismo-mobile.jpg");
+        background: url("../public/imagenes-p/send/senderismo-mobile.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

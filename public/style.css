@@ -19,7 +19,7 @@
 .body-principal {
   min-height: 100vh;
   position: relative;
-  background: url("../../public/imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
+  background: url("../public/imagenes-p/index/Mountains_Trail_Tourist_Back_view_Backpack_Fog_582726_1920x1080.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -943,7 +943,7 @@ footer h3 {
 .body-senderismo {
   min-height: 100vh;
   position: relative;
-  background: url("../../public/imagenes-p/send/senderismo-mobile.jpg");
+  background: url("../public/imagenes-p/send/senderismo-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1298,7 +1298,7 @@ footer h3 {
 /* ---SENDERISMO MOBILE--- */
 @media (max-width: 500px) {
   .body-senderismo {
-    background: url("../../public/imagenes-p/send/senderismo-mobile.jpg");
+    background: url("../public/imagenes-p/send/senderismo-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1628,7 +1628,7 @@ footer h3 {
 /* ---SENDERISMO TABLET--- */
 @media (min-width: 501px) and (max-width: 800px) {
   .body-senderismo {
-    background: url("../../public/imagenes-p/send/senderismo-mobile.jpg");
+    background: url("../public/imagenes-p/send/senderismo-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -2960,7 +2960,7 @@ footer h3 {
     flex-direction: column;
     width: 100%;
     row-gap: 2rem;
-    margin-top: 0;
+    margin-top: 10rem;
     margin-bottom: 2rem;
   }
   .body-camping .main-camping .video-camping {
