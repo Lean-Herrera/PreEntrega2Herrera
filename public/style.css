@@ -222,6 +222,7 @@
   border-radius: 10px;
   gap: 1rem;
   margin-bottom: 2rem;
+  justify-content: space-around;
 }
 .body-principal .main-index .subtitulo-seccion section {
   height: fit-content;
@@ -231,7 +232,7 @@
 }
 .body-principal .main-index .subtitulo-seccion h2 {
   color: rgb(31, 65, 31);
-  font-size: 1.7rem;
+  font-size: 2.5rem;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -240,7 +241,7 @@
 .body-principal .main-index .subtitulo-seccion p {
   margin-left: 1rem;
   color: rgb(74, 107, 65);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: serif;
   padding: 1rem 1rem 2rem 1rem;
 }
@@ -275,7 +276,7 @@
   margin-right: 2rem;
   margin-left: 1rem;
   color: rgb(74, 107, 65);
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: serif;
   padding: 1rem 1rem 2rem 1rem;
 }
@@ -801,7 +802,7 @@ footer .redes a img {
   height: 40px;
 }
 footer .redes a h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   justify-content: center;
   color: rgba(117, 119, 3, 0.894);
@@ -818,14 +819,14 @@ footer .contacto {
   display: grid;
 }
 footer .contacto ul li {
-  font-size: 0.7rem;
+  font-size: 1rem;
   display: flex;
   color: aliceblue;
   justify-self: center;
   text-align: center;
 }
 footer h3 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: flex;
   justify-self: center;
   align-self: center;
@@ -1154,19 +1155,19 @@ footer h3 {
 }
 .body-senderismo .main-send .presentacion-senderismo h2 {
   color: rgb(49, 33, 14);
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .body-senderismo .main-send .presentacion-senderismo p {
-  margin-top: 1.2rem;
+  margin-top: 1.5rem;
   margin-left: 0.7rem;
   color: rgb(22, 114, 139);
-  font-size: 100%;
+  font-size: 1.3rem;
   font-family: serif;
 }
 .body-senderismo .main-send .que-es {
   border: solid;
   background-color: rgba(255, 228, 196, 0.849);
-  height: 350px;
+  height: fit-content;
   max-width: 60%;
   border-radius: 10px;
   justify-self: center;
@@ -1192,6 +1193,7 @@ footer h3 {
   font-size: 2rem;
   font-family: "Bree Serif";
   background-color: rgba(233, 222, 193, 0.929);
+  text-align: center;
   margin-left: 2rem;
   margin-top: 3rem;
 }
@@ -1208,15 +1210,15 @@ footer h3 {
   row-gap: 1rem;
 }
 .body-senderismo .main-send .grid-container article .video-benef {
-  height: 400px;
+  height: 600px;
   border-radius: 15px;
-  width: 300px;
+  width: 400px;
   justify-self: center;
 }
 .body-senderismo .main-send .grid-container article .video-tips {
-  height: 400px;
+  height: 600px;
   border-radius: 15px;
-  width: 300px;
+  width: 400px;
   justify-self: center;
   padding: 0;
 }
@@ -1245,7 +1247,7 @@ footer h3 {
 .body-senderismo .main-send .tipos-de-senderismo h3 {
   margin-left: 1rem;
   font-family: "Times New Roman";
-  font-size: 1rem;
+  font-size: 2rem;
 }
 .body-senderismo .main-send .tipos-de-senderismo ul li {
   display: flex;
@@ -1255,7 +1257,7 @@ footer h3 {
   border-radius: 5px;
   width: fit-content;
   padding: 1rem;
-  font-size: 0.7rem;
+  font-size: 1.3rem;
 }
 .body-senderismo .main-send .donde-realizarlo {
   background-color: rgba(42, 121, 11, 0.295);
@@ -1271,14 +1273,15 @@ footer h3 {
 .body-senderismo .main-send .donde-realizarlo article h3 {
   display: flex;
   font-family: "Times New Roman";
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-top: 1rem;
   justify-content: center;
 }
 .body-senderismo .main-send .donde-realizarlo article p {
   padding-block: 1rem 0.5rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin-left: 1rem;
+  text-align: center;
 }
 .body-senderismo .main-send .donde-realizarlo .mapas {
   margin-top: 3rem;
@@ -1288,8 +1291,8 @@ footer h3 {
   margin-left: 1rem;
 }
 .body-senderismo .main-send .donde-realizarlo .mapas iframe {
-  max-width: 300px;
-  max-height: 300px;
+  max-width: 600px;
+  max-height: 600px;
 }
 .body-senderismo .main-send .donde-realizarlo .mapas h3 {
   font-size: 1.5rem;
@@ -2154,8 +2157,9 @@ footer h3 {
 }
 .body-indispensables .main-indispensables .encabezado-indispensables {
   background-color: rgba(222, 184, 135, 0.7);
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   padding-inline: 1rem;
+  text-align: center;
 }
 .body-indispensables .main-indispensables ol {
   display: grid;
@@ -2164,7 +2168,7 @@ footer h3 {
 }
 .body-indispensables .main-indispensables ol li {
   color: antiquewhite;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   justify-self: baseline;
 }
 .body-indispensables .main-indispensables section {
@@ -2174,7 +2178,7 @@ footer h3 {
   padding: 1rem 2rem;
 }
 .body-indispensables .main-indispensables p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: aliceblue;
   background-size: auto;
 }
@@ -2746,13 +2750,14 @@ footer h3 {
   border-radius: 10px;
 }
 .body-camping .main-camping section h2 {
-  font-size: 1rem;
+  text-align: center;
+  font-size: 2rem;
 }
 .body-camping .main-camping section p {
-  font-size: 0.7rem;
+  font-size: 1.3rem;
 }
 .body-camping .main-camping section h3 {
-  font-size: 1rem;
+  font-size: 2rem;
   justify-self: center;
   align-items: center;
 }
@@ -2770,7 +2775,7 @@ footer h3 {
   align-self: center;
   justify-self: center;
   width: 60vw;
-  height: 400px;
+  height: 600px;
   position: relative;
   border-radius: 15px;
 }
@@ -2782,16 +2787,16 @@ footer h3 {
   justify-self: center;
   align-self: center;
   display: grid;
-  height: 350px;
-  width: 75%;
+  height: 600px;
+  width: 400px;
   border-radius: 15px;
 }
 .body-camping .main-camping .video-recomendaciones {
   justify-self: center;
   align-self: center;
   display: grid;
-  height: 350px;
-  width: 25rem;
+  height: 600px;
+  width: 400px;
   border-radius: 15px;
 }
 

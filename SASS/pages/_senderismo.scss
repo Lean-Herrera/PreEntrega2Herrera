@@ -34,7 +34,7 @@
         top: 0;
         z-index: 1000;
 
-        .header-desktop{
+        .header-desktop {
 
             background-color: #c1cfb0f5;
             display: grid;
@@ -47,39 +47,39 @@
             background-attachment: fixed;
             width: 100%;
             height: 100%;
-        
-            .titulos{
+
+            .titulos {
                 grid-column: span 2;
                 display: grid;
-        
-                  h1 {
+
+                h1 {
                     color: #0a0f32d1;
                     font-size: 4rem;
                     display: flex;
-                    
-                    justify-self:center;
+
+                    justify-self: center;
                     position: sticky;
                     top: 0px;
                     font-family: 'Times New Roman', Times, serif
                 }
-        
-          .subtitulo-principal {
+
+                .subtitulo-principal {
                     font-size: 1.2rem;
                     display: flex;
                     justify-content: center;
                     font-family: 'Times New Roman', Times, serif
                 }
             }
-        
-         img {
-                    width: 100px;
-                    position: relative;
-                    z-index: 1;
-                }
-        
-              
-                    
-                }
+
+            img {
+                width: 100px;
+                position: relative;
+                z-index: 1;
+            }
+
+
+
+        }
 
         @import "../components/nav";
 
@@ -99,18 +99,19 @@
             row-gap: 2rem;
 
 
+
             h2 {
 
                 color: rgb(49, 33, 14);
-                font-size: 1.5rem;
+                font-size: 2rem;
             }
 
 
             p {
-                margin-top: 1.2rem;
+                margin-top: 1.5rem;
                 margin-left: 0.7rem;
                 color: rgb(22, 114, 139);
-                font-size: 100%;
+                font-size: 1.3rem;
                 font-family: serif;
 
 
@@ -122,12 +123,12 @@
 
             border: solid;
             background-color: rgba(255, 228, 196, 0.849);
-            height: 350px;
+            height: fit-content;
             max-width: 60%;
             border-radius: 10px;
             justify-self: center;
             text-align: center;
-            
+
         }
 
         .donde-se-hace {
@@ -149,7 +150,7 @@
             border-radius: 15px;
             width: 85%;
             justify-self: center;
-           
+
 
         }
 
@@ -158,7 +159,7 @@
             font-size: 2rem;
             font-family: 'Bree Serif';
             background-color: rgba(233, 222, 193, 0.929);
-        
+            text-align: center;
             margin-left: 2rem;
             margin-top: 3rem;
 
@@ -169,7 +170,7 @@
         .grid-container {
             margin-top: 2rem;
             display: grid;
-            
+
             grid-template-columns: 50% 50%;
             justify-content: center;
 
@@ -181,20 +182,20 @@
 
 
                 .video-benef {
-                    height: 400px;
+                    height: 600px;
                     border-radius: 15px;
-                    width:300px;
+                    width: 400px;
                     justify-self: center;
-                    
+
 
 
                 }
 
 
                 .video-tips {
-                    height: 400px;
+                    height: 600px;
                     border-radius: 15px;
-                    width: 300px;
+                    width: 400px;
                     justify-self: center;
                     padding: 0;
 
@@ -237,7 +238,7 @@
             h3 {
                 margin-left: 1rem;
                 font-family: 'Times New Roman';
-                font-size: 1rem
+                font-size: 2rem
             }
 
             ul li {
@@ -249,7 +250,7 @@
                 border-radius: 5px;
                 width: fit-content;
                 padding: 1rem;
-                font-size: 0.7rem;
+                font-size: 1.3rem;
 
 
             }
@@ -274,7 +275,7 @@
                 h3 {
                     display: flex;
                     font-family: 'Times New Roman';
-                    font-size: 1.2rem;
+                    font-size: 2rem;
                     margin-top: 1rem;
                     justify-content: center;
 
@@ -283,8 +284,9 @@
                 p {
 
                     padding-block: 1rem 0.5rem;
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                     margin-left: 1rem;
+                    text-align: center;
 
                 }
 
@@ -297,12 +299,13 @@
                 overflow: auto;
                 gap: 1rem;
                 margin-left: 1rem;
-                
 
-iframe{
-    max-width: 300px;
-    max-height: 300px;
-}
+
+                iframe {
+                    max-width: 600px;
+                    max-height: 600px;
+                }
+
                 h3 {
 
                     font-size: 1.5rem;
@@ -573,19 +576,19 @@ iframe{
                     padding: 0.2rem;
 
 
-                    iframe{
+                    iframe {
                         max-width: 400px;
                         max-height: 500px;
 
-                        body{
-                        .embed__footer__stats__item>p:first-child{
-                            
-                            font-size: 10px;
-                        
-                    }       
+                        body {
+                            .embed__footer__stats__item>p:first-child {
+
+                                font-size: 10px;
+
+                            }
                         }
 
-                     
+
                     }
 
                     h3 {
@@ -627,21 +630,21 @@ iframe{
             display: none;
         }
 
-        .header-senderismo{
+        .header-senderismo {
 
             margin-bottom: 2rem;
             height: 10%;
 
- .header-desktop {
-            display: none;
+            .header-desktop {
+                display: none;
+            }
+
+            @import "../components/nav";
+
+
         }
 
-        @import "../components/nav";
 
-
-        }
-
-       
 
 
         .main-send {
@@ -868,10 +871,10 @@ iframe{
                     width: 100%;
                     justify-self: center;
 
-                    
-                    
 
-                    iframe{
+
+
+                    iframe {
                         max-width: 500px;
                         max-height: 500px;
                     }
