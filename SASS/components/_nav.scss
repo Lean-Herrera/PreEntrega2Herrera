@@ -1,16 +1,22 @@
 nav {
+    display: grid;
+    grid-column: span 3;
+    justify-self: center;
+    width: 100%;
 
 
     ul.menu {
 
-
+        display: flex;
         right: 0px;
         position: relative;
         list-style-type: none;
-        float: inline-end;
-        padding: 0px 25px;
+        align-items: center;
+        padding: 0;
         background-color: rgb(0, 0, 0, 0.7);
-        border-radius: 5px;
+        height: fit-content;
+        margin: 0;
+        justify-content: center;
         gap: 1rem;
 
 
@@ -18,13 +24,13 @@ nav {
         li {
             display: inline-block;
             position: relative;
-            margin-right:8px ;
+            margin-right: 8px;
 
 
             a {
                 text-decoration: none;
                 color: #f48a20d1;
-                font-size: 1.2rem;
+                font-size: 1rem;
                 position: relative;
                 text-transform: uppercase;
 
@@ -35,7 +41,7 @@ nav {
                 width: 0;
                 height: 2px;
                 background-color: #f48a20d1;
-                font-size: 1.5rem;
+                font-size: 1rem;
                 position: absolute;
                 bottom: 0;
                 right: 50%;
@@ -64,12 +70,16 @@ nav {
 
 @include mq-mobile {
     .bg-dark {
-        background-color: rgba(117, 119, 3, 0.596) !important;
+        background-color: #757703e4 !important;
         display: grid;
+        z-index: 500;
+        position: fixed;
 
 
         .container-fluid {
             display: grid;
+            width: 100vw;
+            justify-content: space-between;
             grid-template-columns: repeat(3, 1fr);
 
             a {
@@ -103,6 +113,7 @@ nav {
 
                 width: 50%;
                 justify-self: center;
+
             }
 
             .navbar-collapse {
@@ -114,11 +125,19 @@ nav {
 }
 
 @include mq-tablet {
+
+    .barra-responsive {
+
+        height: 100%;
+    }
+
     .bg-dark {
-        background-color: rgba(117, 119, 3, 0.596) !important;
+        background-color: #757703e4 !important;
         display: grid;
-        grid-template-columns: 1fr;
-        
+        grid-template-columns: 100vw;
+        z-index: 500;
+        position: fixed;
+        // height: 10rem;
 
 
         .container-fluid {
